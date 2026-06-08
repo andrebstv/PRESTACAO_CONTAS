@@ -229,12 +229,20 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 </details>
 
 <details>
-<summary><b>Despesa a Categorizar / Outras</b> (2 txs): R$ 475,80 <i>(Clique para expandir)</i></summary>
+<summary><b>Serviços Prestados / Limpeza</b> (1 txs): R$ 250,00 <i>(Clique para expandir)</i></summary>
+
+| Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
+| :---: | :--- | :---: | :---: | :--- |
+| 29/10/2025 | ***.223.097-** |  | R$ 250,00 | Servicos Prestados / Limpeza |
+
+</details>
+
+<details>
+<summary><b>Despesa a Categorizar / Outras</b> (1 txs): R$ 225,80 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
 | 03/07/2025 | ***.114.837-** |  | R$ 225,80 |  |
-| 29/10/2025 | ***.223.097-** |  | R$ 250,00 | Servicos Prestados / Limpeza |
 
 </details>
 
@@ -348,11 +356,12 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 </details>
 
 <details>
-<summary><b>Serviços Prestados / Limpeza</b> (2 txs): R$ 450,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Serviços Prestados / Limpeza</b> (3 txs): R$ 509,50 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
 | 12/01/2026 | LUCINETE SIQUEIRA DOS SANTOS |  | R$ 150,00 |  |
+| 20/02/2026 | ***.043.727-** |  | R$ 59,50 | Serviços Prestados / Limpeza |
 | 27/04/2026 | LUCINETE SIQUEIRA DOS SANTOS |  | R$ 300,00 |  |
 
 </details>
@@ -368,11 +377,10 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 </details>
 
 <details>
-<summary><b>Despesa a Categorizar / Outras</b> (3 txs): R$ 459,50 <i>(Clique para expandir)</i></summary>
+<summary><b>Despesa a Categorizar / Outras</b> (2 txs): R$ 400,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
-| 20/02/2026 | ***.043.727-** |  | R$ 59,50 | Serviços Prestados / Limpeza |
 | 23/01/2026 | ***.223.097-** |  | R$ 250,00 |  |
 | 27/04/2026 | ***.223.097-** |  | R$ 150,00 |  |
 
@@ -405,6 +413,6 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
  - **Internet Estação** (5 txs): R$ 520,35
  - **Manutenção da Estação / Rampa** (2 txs): R$ 1.266,11
  - **Despesa Evento (Confraternização / Troféus / Camisas)** (12 txs): R$ 8.329,00
- - **Serviços Prestados / Limpeza** (2 txs): R$ 450,00
+ - **Serviços Prestados / Limpeza** (4 txs): R$ 759,50
  - **Devolução Pix Enviada** (2 txs): R$ 400,00
- - **Despesa a Categorizar / Outras** (5 txs): R$ 935,30
+ - **Despesa a Categorizar / Outras** (3 txs): R$ 625,80
