@@ -1,0 +1,60 @@
+name: Processar Extrato e Publicar no Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'txt/**'
+      - 'processar_extrato.py'
+  workflow_dispatch:
+
+# Permissões necessárias para publicar no GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Processar Extrato Bancário
+        run: python3 processar_extrato.py
+
+      - name: Commitar Arquivos Gerados (Mantém Histórico no Git)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html relatorio.md extrato_processado.csv
+          # Só comita se houver alterações para evitar loops
+          git diff-index --quiet HEAD || git commit -m "Auto-update: Dashboard e Relatório [skip ci]" -a
+          git push || echo "Nenhuma mudança para push ou falha na permissão"
+        continue-on-error: true
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artefato
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

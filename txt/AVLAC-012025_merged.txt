@@ -1,0 +1,1353 @@
+                                      SICOOB
+                   SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                     SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                     EXTRATO CONTA CORRENTE               13:25:00
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                        VALOR
+31/12/2024            SALDO ANTERIOR                               9.284,75C
+31/12/2024            SALDO BLOQUEADO ANTERIOR                         0,00*
+02/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        150,00C
+                      Recebimento Pix
+                      Prozelo Limp
+                      20.757.200 0001-09
+02/01/2025 129        DÉBITO PACOTE SERVIÇOS                          25,85D
+                      SALDO DO DIA ===== >                         9.408,90C
+20/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        200,00C
+                      Recebimento Pix
+                      Frederico Aguirre von Randow
+                      ***.801.627-**
+                      SALDO DO DIA ===== >                         9.608,90C
+21/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        200,00C
+                      Recebimento Pix
+                      DASANYHEV SOUZA CARDOSO
+                      ***.671.417-**
+                      SALDO DO DIA ===== >                         9.808,90C
+22/01/2025 Pix        PIX RECEBIDO - OUTRA IF                         50,00C
+                      Recebimento Pix
+                      Frederico Aguirre von Randow
+                      ***.801.627-**
+22/01/2025 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      Frederico Aguirre von Randow
+                      ***.801.627-**
+                      SALDO DO DIA ===== >                        10.058,90C
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                         30,00C
+                      Recebimento Pix
+                      ROGER FAICAL RONCONI
+                      ***.881.817-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      THADEU RONCHI
+                      ***.363.077-**
+31/01/2025 17706442   TRANSF.RECEBIDA - PIX SICOOB                   30,00C
+                      REM.: JACKSON BERTOLI BISSE
+                      Transferência Pix
+                      JACKSON BERTOLI BISSE
+                      ***.517.237-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      JAUDE R LOURES ROCHA
+                      ***.651.699-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      JOSE CARLOS BAPTISTA
+                      ***.467.817-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      ALMIR GOMES POLTRONIERI
+                      ***.500.337-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      OSCAR A FIGUEIREDO JR
+                      ***.582.307-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        60,00C
+                      Recebimento Pix
+                      ARLINDO MERA PRATES
+                      ***.389.520-**
+                      XC AVLAC
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      JOAO BATISTA MONT GOMERY CARVALHO LAZARO
+                      ***.072.927-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                                30,00C
+                      Recebimento Pix
+                      Osmar Freitas Barroso
+                      ***.828.277-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                                30,00C
+                      Recebimento Pix
+                      Adilson Neves De Souza
+                      ***.180.907-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                                30,00C
+                      Recebimento Pix
+                      Jovani Borghi
+                      ***.359.377-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                               230,00C
+                      Recebimento Pix
+                      DEVERSON CLEMENCIO DE O.GOMES
+                      ***.594.117-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                                30,00C
+                      Recebimento Pix
+                      WENCESLAU FERREIRA DOS SANTOS
+                      ***.451.226-**
+31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                               200,00C
+                      Recebimento Pix
+                      FM RESTAURANTE LTDA
+                      02.765.845 0001-01
+                      SALDO DO DIA ===== >                               10.908,90C
+                                      RESUMO
+(+) SALDO EM CONTA:                                                      10.908,90C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                    10.908,90C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   6.968,74C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                      SICOOB
+                   SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                     SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                     EXTRATO CONTA CORRENTE               13:28:06
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                        VALOR
+31/01/2025            SALDO ANTERIOR                              10.908,90C
+31/01/2025            SALDO BLOQUEADO ANTERIOR                         0,00*
+03/02/2025 Pix        PIX RECEBIDO - OUTRA IF                         30,00C
+                      Recebimento Pix
+                      Joao Olivio Rodrigues Franzosi
+                      ***.082.597-**
+03/02/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      FRANCISCO CARLOS BATISTA DA SILVA
+                      ***.952.697-**
+                      XC AVILAC 2025
+03/02/2025 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      Andre Scarton Ribeiro Do Val
+                      ***.894.617-**
+03/02/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      FRONZIO CALHEIRA MOTA
+                      ***.528.207-**
+03/02/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      Andre Scarton Ribeiro Do Val
+                      ***.894.617-**
+03/02/2025 17732161   TRANSF.RECEBIDA - PIX SICOOB                   60,00C
+                      REM.: LUCAS RENAN BARBOSA DE ARAUJO PORT
+                      Transferência Pix
+                      LUCAS RENAN BARBOSA DE ARAUJO PORTO
+                      29.532.698 0001-78
+03/02/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      VALNEY JOSE DA SILVA OLIVEIRA
+                      ***.123.157-**
+03/02/2025 3010       CRED.TRANSF.CONTAS INTERCREDIS                 30,00C
+                      REM.: ANDRE ALEXANDRE BARBOSA STAVRAKAS
+                      Transferência Pix
+                      ANDRE ALEXANDRE BARBOSA STAVRAKAS
+                      ***.185.447-**
+03/02/2025 Pix        PIX RECEBIDO - OUTRA IF                        30,00C
+                      Recebimento Pix
+                      CARLOS MARQUES ROSA
+                      ***.630.527-**
+03/02/2025 129        DÉBITO PACOTE SERVIÇOS                          25,85D
+                      SALDO DO DIA ===== >                        11.353,05C
+06/02/2025 Pix        PIX RECEBIDO - OUTRA IF                         30,00C
+                      Recebimento Pix
+                      ALFREDO CARDOSO SANTOS
+                      ***.395.637-**
+                      SALDO DO DIA ===== >                        11.383,05C
+07/02/2025 Pix        PIX RECEBIDO - OUTRA IF                         60,00C
+                      Recebimento Pix
+                      LUIS CARLOS FURBINO DE PI
+                      ***.354.756-**
+                      XCAvlac
+                      SALDO DO DIA ===== >                        11.443,05C
+10/02/2025 Pix        PIX RECEBIDO - OUTRA IF                         30,00C
+                      Recebimento Pix
+                      JULIO AUGUSTO AFRO DA SILVA
+                      ***.778.867-**
+                      XC AVLAC 2025
+10/02/2025 Pix        PIX RECEBIDO - OUTRA IF                        60,00C
+                      Recebimento Pix
+                      RODRIGO CARRILHO SOARES
+                      ***.299.447-**
+10/02/2025 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      RICARDO ANTONIO RAMOS
+                      ***.466.607-**
+                      SALDO DO DIA ===== >                               11.733,05C
+17/02/2025 Pix        PIX RECEBIDO - OUTRA IF                               200,00C
+                      Recebimento Pix
+                      FELIPE DE SOUZA BREDA
+                      ***.114.837-**
+                      SALDO DO DIA ===== >                               11.933,05C
+24/02/2025 3007       CRED.TRANSF.CONTAS INTERCREDIS                         30,00C
+                      REM.: ROGERIO VAZ DA SILVA
+                      Transferência Pix
+                      ROGERIO VAZ DA SILVA
+                      ***.746.196-**
+                      SALDO DO DIA ===== >                               11.963,05C
+                                      RESUMO
+(+) SALDO EM CONTA:                                                      11.963,05C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                    11.963,05C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   6.968,74C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:28:42
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+24/02/2025            SALDO ANTERIOR                                     11.963,05C
+24/02/2025            SALDO BLOQUEADO ANTERIOR                                0,00*
+05/03/2025 129        DÉBITO PACOTE SERVIÇOS                                 25,85D
+                      SALDO DO DIA ===== >                               11.937,20C
+10/03/2025 Pix        PIX RECEBIDO - OUTRA IF                                30,00C
+                      Recebimento Pix
+                      Felipe de Souza Breda
+                      ***.114.837-**
+10/03/2025 3007       CRED.TRANSF.CONTAS INTERCREDIS                        200,00C
+                      REM.: LUIS RICARDO BUTCOVESKY NAPOLEAO
+                      Transferência Pix
+                      LUIS RICARDO BUTCOVESKY NAPOLEAO
+                      ***.946.597-**
+                      SALDO DO DIA ===== >                               12.167,20C
+13/03/2025 Pix        PIX RECEBIDO - OUTRA IF                               200,00C
+                      Recebimento Pix
+                      FELIPE SILVA GOBBO
+                      ***.675.437-**
+                      SALDO DO DIA ===== >                               12.367,20C
+                                       RESUMO
+(+) SALDO EM CONTA:                                                      12.367,20C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                    12.367,20C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   6.968,74C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:29:03
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+13/03/2025            SALDO ANTERIOR                                     12.367,20C
+13/03/2025            SALDO BLOQUEADO ANTERIOR                                0,00*
+01/04/2025 129        DÉBITO PACOTE SERVIÇOS                                 25,85D
+                      SALDO DO DIA ===== >                               12.341,35C
+08/04/2025 Pix        PIX RECEBIDO - OUTRA IF                                30,00C
+                      Recebimento Pix
+                      Rubens Schunck Riciere
+                      ***.548.897-**
+                      SALDO DO DIA ===== >                               12.371,35C
+09/04/2025 3010       CRED.TRANSF.CONTAS INTERCREDIS                        200,00C
+                      REM.: PAULO CESAR ARAUJO SANTOS
+                      Transferência Pix
+                      PAULO CESAR ARAUJO SANTOS
+                      ***.942.545-**
+                      SALDO DO DIA ===== >                               12.571,35C
+28/04/2025 Pix        PIX RECEBIDO - OUTRA IF                               200,00C
+                      Recebimento Pix
+                      LUIS GUSTAVO AZEVEDO
+                      ***.053.637-**
+28/04/2025 Pix        PIX RECEBIDO - OUTRA IF                               200,00C
+                      Recebimento Pix
+                      JOSUE DOS REIS
+                      ***.210.907-**
+                      Anuidade 2025
+                      SALDO DO DIA ===== >                               12.971,35C
+                                       RESUMO
+(+) SALDO EM CONTA:                                                      12.971,35C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                    12.971,35C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.134,41C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:29:29
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+28/04/2025            SALDO ANTERIOR                                     12.971,35C
+28/04/2025            SALDO BLOQUEADO ANTERIOR                                0,00*
+02/05/2025 129        DÉBITO PACOTE SERVIÇOS                                 25,85D
+                      SALDO DO DIA ===== >                               12.945,50C
+26/05/2025 Pix        PIX RECEBIDO - OUTRA IF                                30,00C
+                      Recebimento Pix
+                      MILTON L M L G DE S MARTINHO
+                      ***.365.867-**
+                      SALDO DO DIA ===== >                               12.975,50C
+                                       RESUMO
+(+) SALDO EM CONTA:                                                      12.975,50C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                    12.975,50C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.134,41C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:29:48
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+26/05/2025            SALDO ANTERIOR                                     12.975,50C
+26/05/2025            SALDO BLOQUEADO ANTERIOR                                0,00*
+02/06/2025 129        DÉBITO PACOTE SERVIÇOS                                 25,85D
+                                       RESUMO
+(+) SALDO EM CONTA:                                                      12.949,65C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                    12.949,65C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.134,41C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                      SICOOB
+                   SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                     SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                     EXTRATO CONTA CORRENTE               13:30:07
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                        VALOR
+02/06/2025            SALDO ANTERIOR                              12.949,65C
+02/06/2025            SALDO BLOQUEADO ANTERIOR                         0,00*
+01/07/2025 129        DÉBITO PACOTE SERVIÇOS                          25,85D
+                      SALDO DO DIA ===== >                        12.923,80C
+02/07/2025 Pix        PIX EMITIDO OUTRA IF                           615,00D
+                      Pagamento Pix
+                      48.024.083 0001-85
+                      SALDO DO DIA ===== >                        12.308,80C
+03/07/2025 Pix        PIX EMITIDO OUTRA IF                           615,00D
+                      Pagamento Pix
+                      48.024.083 0001-85
+03/07/2025 Pix        PIX EMITIDO OUTRA IF                          465,00D
+                      Pagamento Pix
+                      ***.801.627-**
+03/07/2025 Pix        PIX EMITIDO OUTRA IF                          225,80D
+                      Pagamento Pix
+                      ***.114.837-**
+03/07/2025 Pix        PIX EMITIDO OUTRA IF                          606,00D
+                      Pagamento Pix
+                      40.612.231 0001-70
+                      SALDO DO DIA ===== >                        10.397,00C
+04/07/2025 Pix        PIX RECEBIDO - OUTRA IF                        200,00C
+                      Recebimento Pix
+                      DEOVAIR MONTEIRO CESAR
+                      ***.048.446-**
+                      Avlac
+                      SALDO DO DIA ===== >                        10.597,00C
+09/07/2025 Pix        PIX EMITIDO OUTRA IF                           615,00D
+                      Pagamento Pix
+                      40.612.231 0001-70
+                      SALDO DO DIA ===== >                         9.982,00C
+14/07/2025 Pix        PIX EMITIDO OUTRA IF                         1.488,57D
+                      Pagamento Pix
+                      ***.801.627-**
+                      repasse festa AVLAC
+                      SALDO DO DIA ===== >                         8.493,43C
+16/07/2025 Pix        PIX EMITIDO OUTRA IF                         1.206,11D
+                      Pagamento Pix
+                      15.436.940 0001-03
+                      estacao metereologica
+                      SALDO DO DIA ===== >                         7.287,32C
+22/07/2025 Pix        CRÉDITO DEVOLUÇÃO PIX                            0,58C
+                      Devolução Pix
+                      Amazon Servicos de Varejo do Brasil LTDA
+                      15.436.940 0001-03
+                      SALDO DO DIA ===== >                         7.287,90C
+23/07/2025 Pix        PIX EMITIDO OUTRA IF                           810,00D
+                      Pagamento Pix
+                      ***.705.027-**
+                      Cerveja Bar do Bruxo
+                      SALDO DO DIA ===== >                         6.477,90C
+                                       RESUMO
+(+) SALDO EM CONTA:                                                6.477,90C
+(+) CHEQUE ESPECIAL CONTRATADO:                                        0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                      0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                    0,00D
+(=) SALDO DISPONÍVEL:                                              6.477,90C
+SALDO BLOQUEADO (CHEQUES):                                             0,00*
+SALDO BLOQUEADO (JUDICIAL):                                            0,00C
+SALDO EM CONTA CAPITAL:                                            7.134,41C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                         0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                       0,00D
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:30:26
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+23/07/2025            SALDO ANTERIOR                                      6.477,90C
+23/07/2025            SALDO BLOQUEADO ANTERIOR                                0,00*
+01/08/2025 129        DÉBITO PACOTE SERVIÇOS                                 30,85D
+                                       RESUMO
+(+) SALDO EM CONTA:                                                       6.447,05C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                     6.447,05C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.134,41C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:30:50
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+01/08/2025            SALDO ANTERIOR                                      6.447,05C
+01/08/2025            SALDO BLOQUEADO ANTERIOR                                0,00*
+01/09/2025 129        DÉBITO PACOTE SERVIÇOS                                 30,85D
+                                       RESUMO
+(+) SALDO EM CONTA:                                                       6.416,20C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                     6.416,20C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.134,41C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:31:11
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+01/09/2025            SALDO ANTERIOR                                      6.416,20C
+01/09/2025            SALDO BLOQUEADO ANTERIOR                                0,00*
+01/10/2025 129        DÉBITO PACOTE SERVIÇOS                                 30,85D
+                      SALDO DO DIA ===== >                                6.385,35C
+29/10/2025 Pix        PIX EMITIDO OUTRA IF                                  250,00D
+                      Pagamento Pix
+                      ***.223.097-**
+                      SALDO DO DIA ===== >                                6.135,35C
+                                       RESUMO
+(+) SALDO EM CONTA:                                                       6.135,35C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                     6.135,35C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.134,41C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:33:23
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+29/10/2025            SALDO ANTERIOR                                      6.135,35C
+29/10/2025            SALDO BLOQUEADO ANTERIOR                                0,00*
+03/11/2025 129        DÉBITO PACOTE SERVIÇOS                                 30,85D
+                      SALDO DO DIA ===== >                                6.104,50C
+26/11/2025 Pix        PIX EMITIDO OUTRA IF                                1.698,00D
+                      Pagamento Pix
+                      40.612.231 0001-70
+26/11/2025 Pix        PIX EMITIDO OUTRA IF                                   54,00D
+                      Pagamento Pix
+                      36.320.364 0001-04
+26/11/2025 Pix        PIX EMITIDO OUTRA IF                                  219,60D
+                      Pagamento Pix
+                      ***.801.627-**
+                      SALDO DO DIA ===== >                                4.132,90C
+28/11/2025 Pix        PIX EMITIDO OUTRA IF                                1.803,74D
+                      Pagamento Pix
+                      ***.801.627-**
+                      SALDO DO DIA ===== >                                2.329,16C
+                                       RESUMO
+(+) SALDO EM CONTA:                                                       2.329,16C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                     2.329,16C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.134,41C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                      SICOOB
+                   SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                     SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                     EXTRATO CONTA CORRENTE              13:33:45
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                       VALOR
+28/11/2025            SALDO ANTERIOR                              2.329,16C
+28/11/2025            SALDO BLOQUEADO ANTERIOR                        0,00*
+01/12/2025 Pix        PIX EMITIDO OUTRA IF                          350,00D
+                      Pagamento Pix
+                      ***.009.767-**
+                      churrasqueiro
+01/12/2025 Pix        PIX EMITIDO OUTRA IF                         300,00D
+                      Pagamento Pix
+                      ***.600.567-**
+                      Feijao Tropeiro
+01/12/2025 129        DÉBITO PACOTE SERVIÇOS                         30,85D
+                      SALDO DO DIA ===== >                        1.648,31C
+04/12/2025 Pix        PIX EMITIDO OUTRA IF                          933,00D
+                      Pagamento Pix
+                      ***.705.027-**
+                      Cerveja e Carvao
+04/12/2025 Pix        ESTORNO PIX EMITIDO                          933,00C
+                      Estorno Pix
+                      ***.705.027-**
+                      Cerveja e Carvao
+                      SALDO DO DIA ===== >                        1.648,31C
+05/12/2025 Pix        PIX EMITIDO OUTRA IF                          933,00D
+                      Pagamento Pix
+                      ***.705.027-**
+                      cerveja e carvao
+                      SALDO DO DIA ===== >                         715,31C
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      Atila Pinheiro Afonso Campagnaro
+                      ***.777.577-**
+                      ATILACAMPAGNA
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      WENCESLAU FERREIRA DOS SANTOS
+                      ***.451.226-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      CARLOS MARQUES ROSA
+                      ***.630.527-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      ROGER FAICAL RONCONI
+                      ***.881.817-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      THADEU RONCHI
+                      ***.363.077-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      FRONZIO CALHEIRA MOTA
+                      ***.528.207-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      Andre Scarton Ribeiro Do Val
+                      ***.894.617-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      VALNEY JOSE DA SILVA OLIVEIRA
+                      ***.123.157-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      ARLINDO MERA PRATES
+                      ***.389.520-**
+                      Anuidade
+08/12/2025 21578486   TRANSF.RECEBIDA - PIX SICOOB                 150,00C
+                      REM.: JACKSON BERTOLI BISSE
+                      Transferência Pix
+                      JACKSON BERTOLI BISSE
+                      ***.517.237-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      Rubens Schunck Riciere
+                      ***.548.897-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      FLORISVALDO KRAUZE
+                      ***.127.437-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      ROGERIO OLIVEIRA DE AGUIAR
+                      ***.874.207-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      JOAO BATISTA MONT GOMERY CARVALHO LAZARO
+                      ***.072.927-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      MICHELI SOSSAI SPADETO
+                      ***.012.257-**
+08/12/2025 21578805   TRANSF.RECEBIDA - PIX SICOOB                150,00C
+                      REM.: LUCAS RENAN BARBOSA DE ARAUJO PORT
+                      Transferência Pix
+                      LUCAS RENAN BARBOSA DE ARAUJO PORTO
+                      29.532.698 0001-78
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      JAUDE R LOURES ROCHA
+                      ***.651.699-**
+08/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      Joao Olivio Rodrigues Franzosi
+                      ***.082.597-**
+                      SALDO DO DIA ===== >                       3.415,31C
+09/12/2025 3010       CRED.TRANSF.CONTAS INTERCREDIS               150,00C
+                      REM.: PAULO CESAR ARAUJO SANTOS
+                      Transferência Pix
+                      PAULO CESAR ARAUJO SANTOS
+                      ***.942.545-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      MARCELO FERREIRA RATIS
+                      ***.039.207-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      CLOVIS JOSE BARBOSA FIGUEIRA
+                      ***.650.117-**
+                      AVLAC
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      JOSIEL BARCELOS SANCHES
+                      ***.457.587-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      MAURICIO JOSE S WANDERLEY
+                      ***.333.987-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      JULIO AUGUSTO AFRO DA SILVA
+                      ***.778.867-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      Pedro Henrique Torrezani Curbani
+                      ***.296.427-**
+09/12/2025 3008       CRED.TRANSF.CONTAS INTERCREDIS              150,00C
+                      REM.: ROSENI APARECIDA EFFGEN INOCENTE
+                      Transferência Pix
+                      ROSENI APARECIDA EFFGEN INOCENTE
+                      ***.554.257-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                     150,00C
+                      Recebimento Pix
+                      MILTON L M L G DE S MARTINHO
+                      ***.365.867-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      MARCOS LEAO BICALHO
+                      ***.950.397-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      Luis Hamilton Brasil da Costa
+                      ***.980.997-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       150,00C
+                      Recebimento Pix
+                      MARINA OLEKSINA
+                      ***.584.811-**
+09/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       150,00C
+                      Recebimento Pix
+                      FRANCISCO CARLOS BATISTA DA SILVA
+                      ***.952.697-**
+                      Anuidade AVLAC 2026
+                      SALDO DO DIA ===== >                         5.465,31C
+12/12/2025 Pix        PIX RECEBIDO - OUTRA IF                        150,00C
+                      Recebimento Pix
+                      CLAUDIO NEY P LOUREIRO
+                      ***.456.917-**
+12/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       150,00C
+                      Recebimento Pix
+                      Adilson Neves De Souza
+                      ***.180.907-**
+                      SALDO DO DIA ===== >                         5.765,31C
+15/12/2025 Pix        PIX RECEBIDO - OUTRA IF                        200,00C
+                      Recebimento Pix
+                      JORGE ELIAS FARIA DE AZEVEDO
+                      ***.302.487-**
+15/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       150,00C
+                      Recebimento Pix
+                      RODRIGO CARRILHO SOARES
+                      ***.299.447-**
+15/12/2025 21681302   TRANSF.REALIZADA PIX SICOOB                   200,00D
+                      FAV.: SCHERRERNET TELECOMUNICACOES   LTDA
+                      Transferência Pix
+                      ASSOCIACAO DE VOO LIVRE DE ALFREDO   CHAVE
+                      03.899.375 0001-23
+15/12/2025 21681303   TRANSF.REALIZADA PIX SICOOB                    50,65D
+                      FAV.: SCHERRERNET TELECOMUNICACOES   LTDA
+                      Transferência Pix
+                      ASSOCIACAO DE VOO LIVRE DE ALFREDO   CHAVE
+                      03.899.375 0001-23
+                      SALDO DO DIA ===== >                         5.864,66C
+18/12/2025 Pix        PIX RECEBIDO - OUTRA IF                        150,00C
+                      Recebimento Pix
+                      ALFREDO CARDOSO SANTOS
+                      ***.395.637-**
+18/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       150,00C
+                      Recebimento Pix
+                      HUGO CAIADO DA ROCHA
+                      ***.389.531-**
+                      SALDO DO DIA ===== >                         6.164,66C
+24/12/2025 Pix        PIX RECEBIDO - OUTRA IF                        150,00C
+                      Recebimento Pix
+                      CARLOS ROMERO AGUIAR SIQUEIRA
+                      ***.829.497-**
+                      SALDO DO DIA ===== >                         6.314,66C
+29/12/2025 Pix        PIX RECEBIDO - OUTRA IF                        150,00C
+                      Recebimento Pix
+                      Almir Gomes Poltronieri
+                      ***.500.337-**
+29/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       150,00C
+                      Recebimento Pix
+                      RODOLPHO ROBSON CAVALINI
+                      ***.155.587-**
+29/12/2025 Pix        PIX RECEBIDO - OUTRA IF                       150,00C
+                      Recebimento Pix
+                      JOSE CARLOS BAPTISTA
+                      ***.467.817-**
+29/12/2025 3010       CRED.TRANSF.CONTAS INTERCREDIS                        150,00C
+                      REM.: ANDRE ALEXANDRE BARBOSA STAVRAKAS
+                      Transferência Pix
+                      ANDRE ALEXANDRE BARBOSA STAVRAKAS
+                      ***.185.447-**
+29/12/2025 Pix        PIX RECEBIDO - OUTRA IF                               150,00C
+                      Recebimento Pix
+                      Vinicius Mansur Dose Lage de Almeida
+                      ***.930.767-**
+                      SALDO DO DIA ===== >                                7.064,66C
+30/12/2025 Pix        PIX RECEBIDO - OUTRA IF                               150,00C
+                      Recebimento Pix
+                      Jovani Borghi
+                      ***.359.377-**
+                      JOVANIBORGHI
+30/12/2025 Pix        PIX RECEBIDO - OUTRA IF                               150,00C
+                      Recebimento Pix
+                      DASANYHEV DE SOUZA CARDOSO
+                      ***.671.417-**
+30/12/2025 3007       CRED.TRANSF.CONTAS INTERCREDIS                        150,00C
+                      REM.: ROGERIO VAZ DA SILVA
+                      Transferência Pix
+                      ROGERIO VAZ DA SILVA
+                      ***.746.196-**
+                      SALDO DO DIA ===== >                                7.514,66C
+31/12/2025 3260       CRED.TRANSF.CONTAS INTERCREDIS                        150,00C
+                      REM.: ALEXANDRE RODRIGUES VALINHOS
+                      Transferência Pix
+                      ALEXANDRE RODRIGUES VALINHOS
+                      ***.155.347-**
+31/12/2025 Pix        PIX RECEBIDO - OUTRA IF                               150,00C
+                      Recebimento Pix
+                      FELIPE DE SOUZA BREDA
+                      ***.114.837-**
+31/12/2025 Pix        PIX EMITIDO OUTRA IF                                  300,00D
+                      Pagamento Pix
+                      ***.801.627-**
+                      pagamento de mastro estacao Gustavo serv
+                      ico Cimento Brita e Areia
+31/12/2025 618        CRÉD.JUROS S/CAPITAL                                  202,95C
+                      SALDO DO DIA ===== >                                7.717,61C
+                                      RESUMO
+(+) SALDO EM CONTA:                                                       7.717,61C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                     7.717,61C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.946,19C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                      SICOOB
+                   SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                     SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                     EXTRATO CONTA CORRENTE              13:35:15
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                       VALOR
+31/12/2025            SALDO ANTERIOR                              7.717,61C
+31/12/2025            SALDO BLOQUEADO ANTERIOR                        0,00*
+02/01/2026 129        DÉBITO PACOTE SERVIÇOS                         30,85D
+                      SALDO DO DIA ===== >                        7.686,76C
+05/01/2026 Pix        PIX RECEBIDO - OUTRA IF                       150,00C
+                      Recebimento Pix
+                      FELIPE SILVA GOBBO
+                      ***.675.437-**
+05/01/2026 Pix        PIX RECEBIDO - OUTRA IF                      200,00C
+                      Recebimento Pix
+                      ARNALDO FERRUJINI COSTA
+                      ***.228.147-**
+                      SALDO DO DIA ===== >                        8.036,76C
+07/01/2026 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      JUAN CARLOS GEARA DE BARROS
+                      ***.996.087-**
+07/01/2026 Pix        DÉBITO DEVOLUÇÃO PIX                         200,00D
+                      Devolução Pix
+                      ***.996.087-**
+                      SALDO DO DIA ===== >                        8.036,76C
+08/01/2026 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      OSCAR AUGUSTO FIGUEIREDO JR
+                      ***.582.307-**
+08/01/2026 Pix        PIX RECEBIDO - OUTRA IF                      200,00C
+                      Recebimento Pix
+                      LUIS CARLOS FURBINO DE PI
+                      ***.354.756-**
+                      SALDO DO DIA ===== >                        8.436,76C
+12/01/2026 22020958   TRANSF.REALIZADA PIX SICOOB                   150,00D
+                      FAV.: LUCINETE SIQUEIRA DOS SANTOS
+                      Transferência Pix
+                      ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVE
+                      03.899.375 0001-23
+                      SALDO DO DIA ===== >                        8.286,76C
+14/01/2026 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      RAFAEL PEREIRA
+                      ***.596.236-**
+                      Anuidade avlac
+                      SALDO DO DIA ===== >                        8.486,76C
+15/01/2026 22094705   TRANSF.REALIZADA PIX SICOOB                    89,90D
+                      FAV.: SCHERRERNET TELECOMUNICACOES LTDA
+                      Transferência Pix
+                      ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVE
+                      03.899.375 0001-23
+                      SALDO DO DIA ===== >                        8.396,86C
+22/01/2026 Pix        PIX EMITIDO OUTRA IF                          800,00D
+                      Pagamento Pix
+                      ***.935.897-**
+                      carafly cache da banda
+                      SALDO DO DIA ===== >                        7.596,86C
+23/01/2026 Pix        PIX EMITIDO OUTRA IF                          250,00D
+                      Pagamento Pix
+                      ***.223.097-**
+                      SALDO DO DIA ===== >                        7.346,86C
+                                       RESUMO
+(+) SALDO EM CONTA:                                               7.346,86C
+(+) CHEQUE ESPECIAL CONTRATADO:                                       0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                     0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                   0,00D
+(=) SALDO DISPONÍVEL:                                             7.346,86C
+SALDO BLOQUEADO (CHEQUES):                                            0,00*
+SALDO BLOQUEADO (JUDICIAL):                                           0,00C
+SALDO EM CONTA CAPITAL:                                                   7.946,19C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                      SICOOB
+                   SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                     SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                     EXTRATO CONTA CORRENTE              13:40:15
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                       VALOR
+23/01/2026            SALDO ANTERIOR                              7.346,86C
+23/01/2026            SALDO BLOQUEADO ANTERIOR                        0,00*
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
+                      Recebimento Pix
+                      MILTON L M L G DE S MARTINHO
+                      ***.365.867-**
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      JORGE ELIAS FARIA DE AZEVEDO
+                      ***.302.487-**
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      Andre Scarton Ribeiro Do Val
+                      ***.894.617-**
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      Lucas Renan Barbosa de Araujo Porto
+                      ***.680.357-**
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      JOAO BATISTA MONT GOMERY CARVALHO LAZARO
+                      ***.072.927-**
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      THADEU RONCHI
+                      ***.363.077-**
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      ROGER FAICAL RONCONI
+                      ***.881.817-**
+02/02/2026 22289448   TRANSF.RECEBIDA - PIX SICOOB                 100,00C
+                      REM.: JACKSON BERTOLI BISSE
+                      Transferência Pix
+                      JACKSON BERTOLI BISSE
+                      ***.517.237-**
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      FELIPE DE SOUZA BREDA
+                      ***.114.837-**
+                      inscricao XC AVLAC
+02/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      CARLOS MARQUES ROSA
+                      ***.630.527-**
+02/02/2026 129        DÉBITO PACOTE SERVIÇOS                         30,85D
+                      SALDO DO DIA ===== >                        8.416,01C
+03/02/2026 Pix        PIX RECEBIDO - OUTRA IF                       100,00C
+                      Recebimento Pix
+                      VALNEY JOSE DA SILVA OLIVEIRA
+                      ***.123.157-**
+03/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      JOAO OLIVIO RODRIGUES FRANZOSI
+                      ***.082.597-**
+03/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      FRONZIO CALHEIRA MOTA
+                      ***.528.207-**
+                      SALDO DO DIA ===== >                        8.716,01C
+05/02/2026 Pix        PIX RECEBIDO - OUTRA IF                       100,00C
+                      Recebimento Pix
+                      ALFREDO CARDOSO SANTOS
+                      ***.395.637-**
+05/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      FRANCISCO CARLOS BATISTA DA SILVA
+                      ***.952.697-**
+                      Inscricao XC AVILAC 2026
+                      SALDO DO DIA ===== >                       8.916,01C
+09/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      100,00C
+                      Recebimento Pix
+                      JOSIEL BARCELOS SANCHES
+                      ***.457.587-**
+09/02/2026 Pix        PIX RECEBIDO - OUTRA IF                     100,00C
+                      Recebimento Pix
+                      JOSE CARLOS BAPTISTA
+                      ***.467.817-**
+09/02/2026 Pix        PIX RECEBIDO - OUTRA IF                     100,00C
+                      Recebimento Pix
+                      MICHELI SOSSAI SPADETO
+                      ***.012.257-**
+09/02/2026 Pix        PIX RECEBIDO - OUTRA IF                     100,00C
+                      Recebimento Pix
+                      JULIO AUGUSTO AFRO DA SILVA
+                      ***.778.867-**
+                      XC AVLAC 2026
+                      SALDO DO DIA ===== >                       9.316,01C
+11/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      200,00C
+                      Recebimento Pix
+                      LUCIA REGINA RIBEIRO BARROSO
+                      ***.726.167-**
+                      SALDO DO DIA ===== >                       9.516,01C
+18/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      150,00C
+                      Recebimento Pix
+                      CASTELHANOS BEACH & BIKE
+                      51.485.576 0001-27
+18/02/2026 Pix        PIX RECEBIDO - OUTRA IF                     100,00C
+                      Recebimento Pix
+                      WENCESLAU F SANTOS
+                      ***.451.226-**
+18/02/2026 Pix        PIX RECEBIDO - OUTRA IF                     200,00C
+                      Recebimento Pix
+                      RICARDO ANTONIO RAMOS
+                      ***.466.607-**
+18/02/2026 3010       CRED.TRANSF.CONTAS INTERCREDIS              100,00C
+                      REM.: ANDRE ALEXANDRE BARBOSA STAVRAKAS
+                      Transferência Pix
+                      ANDRE ALEXANDRE BARBOSA STAVRAKAS
+                      ***.185.447-**
+18/02/2026 Pix        PIX RECEBIDO - OUTRA IF                      50,00C
+                      Recebimento Pix
+                      CASTELHANOS BEACH & BIKE
+                      51.485.576 0001-27
+                      SALDO DO DIA ===== >                      10.116,01C
+20/02/2026 Pix        PIX EMITIDO OUTRA IF                          59,50D
+                      Pagamento Pix
+                      ***.043.727-**
+20/02/2026 22551868   DÉB.TÍTULO COBRANÇA                           90,93D
+                      SALDO DO DIA ===== >                       9.965,58C
+                                      RESUMO
+(+) SALDO EM CONTA:                                              9.965,58C
+(+) CHEQUE ESPECIAL CONTRATADO:                                      0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                    0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                  0,00D
+(=) SALDO DISPONÍVEL:                                            9.965,58C
+SALDO BLOQUEADO (CHEQUES):                                           0,00*
+SALDO BLOQUEADO (JUDICIAL):                                          0,00C
+SALDO EM CONTA CAPITAL:                                          7.946,19C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                       0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                     0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                       0,00D
+PREVISÃO JUROS:                                                     0,00D
+PREVISÃO TARIFAS:                                                   0,00D
+
+                                OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:40:36
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+20/02/2026            SALDO ANTERIOR                                      9.965,58C
+20/02/2026            SALDO BLOQUEADO ANTERIOR                                0,00*
+02/03/2026 129        DÉBITO PACOTE SERVIÇOS                                 30,85D
+                      SALDO DO DIA ===== >                                9.934,73C
+06/03/2026 Pix        PIX RECEBIDO - OUTRA IF                               200,00C
+                      Recebimento Pix
+                      JEAN CARLO MACIEL ALMEIDA
+                      ***.354.897-**
+                      SALDO DO DIA ===== >                               10.134,73C
+16/03/2026 Pix        PIX RECEBIDO - OUTRA IF                               200,00C
+                      Recebimento Pix
+                      Rubens Schunck Riciere
+                      ***.548.897-**
+16/03/2026 Pix        DÉBITO DEVOLUÇÃO PIX                                  200,00D
+                      Devolução Pix
+                      ***.548.897-**
+16/03/2026 22861241   TRANSF.REALIZADA PIX SICOOB                            89,90D
+                      FAV.: SCHERRERNET TELECOMUNICACOES LTDA
+                      Transferência Pix
+                      ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVE
+                      03.899.375 0001-23
+                      SALDO DO DIA ===== >                               10.044,83C
+                                       RESUMO
+(+) SALDO EM CONTA:                                                      10.044,83C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                    10.044,83C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.946,19C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+                                       SICOOB
+                    SISTEMA DE COOPERATIVAS DE CRÉDITO DO BRASIL
+                      SISBR - SISTEMA DE INFORMÁTICA DO SICOOB
+
+03/06/2026                      EXTRATO CONTA CORRENTE                     13:41:37
+
+COOP.: 3001-5 / SICOOB SUL- LITORÂNEO
+CONTA: 1.077-4 / ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVES
+DATA       DOCUMENTO HISTÓRICO                                               VALOR
+16/03/2026            SALDO ANTERIOR                                     10.044,83C
+16/03/2026            SALDO BLOQUEADO ANTERIOR                                0,00*
+01/04/2026 129        DÉBITO PACOTE SERVIÇOS                                 30,85D
+                      SALDO DO DIA ===== >                               10.013,98C
+06/04/2026 Pix        PIX RECEBIDO - OUTRA IF                               100,00C
+                      Recebimento Pix
+                      Rubens Schunck Riciere
+                      ***.548.897-**
+                      SALDO DO DIA ===== >                               10.113,98C
+09/04/2026 Pix        PIX EMITIDO OUTRA IF                                   60,00D
+                      Pagamento Pix
+                      85.255.743 0001-65
+09/04/2026 23164126   TRANSF.REALIZADA PIX SICOOB                            89,90D
+                      FAV.: SCHERRERNET TELECOMUNICACOES LTDA
+                      Transferência Pix
+                      ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVE
+                      03.899.375 0001-23
+                      SALDO DO DIA ===== >                                9.964,08C
+17/04/2026 Pix        PIX RECEBIDO - OUTRA IF                               200,00C
+                      Recebimento Pix
+                      Thiago de Moraes Lima
+                      ***.559.467-**
+                      SALDO DO DIA ===== >                               10.164,08C
+27/04/2026 23377604   TRANSF.REALIZADA PIX SICOOB                           300,00D
+                      FAV.: LUCINETE SIQUEIRA DOS SANTOS
+                      Transferência Pix
+                      ASSOCIACAO DE VOO LIVRE DE ALFREDO CHAVE
+                      03.899.375 0001-23
+27/04/2026 Pix        PIX EMITIDO OUTRA IF                                  150,00D
+                      Pagamento Pix
+                      ***.223.097-**
+                      SALDO DO DIA ===== >                                9.714,08C
+                                       RESUMO
+(+) SALDO EM CONTA:                                                       9.714,08C
+(+) CHEQUE ESPECIAL CONTRATADO:                                               0,00C
+(-) JUROS VENCIDOS PROVISIONADOS:                                             0,00D
+(-) TARIFAS VENCIDAS PROVISIONADAS:                                           0,00D
+(=) SALDO DISPONÍVEL:                                                     9.714,08C
+SALDO BLOQUEADO (CHEQUES):                                                    0,00*
+SALDO BLOQUEADO (JUDICIAL):                                                   0,00C
+SALDO EM CONTA CAPITAL:                                                   7.946,19C
+
+                          ENCARGOS VENCIDOS REMANESCENTES
+JUROS VENCIDOS REMANESCENTES:                                                 0,00D
+TARIFAS VENCIDAS REMANESCENTES:                                               0,00D
+
+                                 ENCARGOS A VENCER
+PREVISÃO IOF:                                                                 0,00D
+PREVISÃO JUROS:                                                               0,00D
+PREVISÃO TARIFAS:                                                             0,00D
+
+                                 OUTRAS INFORMAÇÕES
+VENCIMENTO CHEQUE ESPECIAL:
+TAXA CHEQUE ESPECIAL (a.m.):                                                   5,97%
+CUSTO EFETIVO TOTAL (a.m.):                                                    0,00%
+CUSTO EFETIVO TOTAL (a.a.):                                                    0,00%
+                        000 EXTRATOS EMITIDOS ATÉ 01/06/2026
+SAC: 0800 724 4420                                     OUVIDORIA SICOOB: 08007250996
+
