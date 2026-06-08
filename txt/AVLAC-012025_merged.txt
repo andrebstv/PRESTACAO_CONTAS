@@ -13,6 +13,7 @@ DATA       DOCUMENTO HISTÓRICO                                        VALOR
                       Recebimento Pix
                       Prozelo Limp
                       20.757.200 0001-09
+                      Anuidade
 02/01/2025 129        DÉBITO PACOTE SERVIÇOS                          25,85D
                       SALDO DO DIA ===== >                         9.408,90C
 20/01/2025 Pix        PIX RECEBIDO - OUTRA IF                        200,00C
@@ -29,10 +30,12 @@ DATA       DOCUMENTO HISTÓRICO                                        VALOR
                       Recebimento Pix
                       Frederico Aguirre von Randow
                       ***.801.627-**
+                      Anuidade
 22/01/2025 Pix        PIX RECEBIDO - OUTRA IF                       200,00C
                       Recebimento Pix
                       Frederico Aguirre von Randow
                       ***.801.627-**
+                      Anuidade
                       SALDO DO DIA ===== >                        10.058,90C
 31/01/2025 Pix        PIX RECEBIDO - OUTRA IF                         30,00C
                       Recebimento Pix
@@ -96,6 +99,7 @@ DATA       DOCUMENTO HISTÓRICO                                        VALOR
                       Recebimento Pix
                       FM RESTAURANTE LTDA
                       02.765.845 0001-01
+                      Anuidade
                       SALDO DO DIA ===== >                               10.908,90C
                                       RESUMO
 (+) SALDO EM CONTA:                                                      10.908,90C
@@ -610,6 +614,7 @@ DATA       DOCUMENTO HISTÓRICO                                               VA
 29/10/2025 Pix        PIX EMITIDO OUTRA IF                                  250,00D
                       Pagamento Pix
                       ***.223.097-**
+                      Servicos Prestados / Limpeza
                       SALDO DO DIA ===== >                                6.135,35C
                                        RESUMO
 (+) SALDO EM CONTA:                                                       6.135,35C
@@ -1177,6 +1182,7 @@ DATA       DOCUMENTO HISTÓRICO                                       VALOR
                       Recebimento Pix
                       CASTELHANOS BEACH & BIKE
                       51.485.576 0001-27
+                      Anuidade
 18/02/2026 Pix        PIX RECEBIDO - OUTRA IF                     100,00C
                       Recebimento Pix
                       WENCESLAU F SANTOS
@@ -1194,10 +1200,12 @@ DATA       DOCUMENTO HISTÓRICO                                       VALOR
                       Recebimento Pix
                       CASTELHANOS BEACH & BIKE
                       51.485.576 0001-27
+                      Anuidade
                       SALDO DO DIA ===== >                      10.116,01C
 20/02/2026 Pix        PIX EMITIDO OUTRA IF                          59,50D
                       Pagamento Pix
                       ***.043.727-**
+                      Serviços Prestados / Limpeza
 20/02/2026 22551868   DÉB.TÍTULO COBRANÇA                           90,93D
                       SALDO DO DIA ===== >                       9.965,58C
                                       RESUMO

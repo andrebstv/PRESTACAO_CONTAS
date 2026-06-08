@@ -20,10 +20,11 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 ### 🟢 Recebimentos de 2025
 
 <details>
-<summary><b>Anuidade</b> (60 txs): R$ 9.830,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Anuidade</b> (63 txs): R$ 10.230,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
+| 02/01/2025 | Prozelo Limp | 20.757.200 0001-09 | R$ 150,00 | Anuidade |
 | 03/02/2025 | Andre Scarton Ribeiro Do Val | ***.894.617-** | R$ 200,00 |  |
 | 04/07/2025 | DEOVAIR MONTEIRO CESAR | ***.048.446-** | R$ 200,00 | Avlac |
 | 08/12/2025 | Atila Pinheiro Afonso Campagnaro | ***.777.577-** | R$ 150,00 | ATILACAMPAGNA |
@@ -69,7 +70,8 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | 18/12/2025 | HUGO CAIADO DA ROCHA | ***.389.531-** | R$ 150,00 |  |
 | 20/01/2025 | Frederico Aguirre von Randow | ***.801.627-** | R$ 200,00 |  |
 | 21/01/2025 | DASANYHEV SOUZA CARDOSO | ***.671.417-** | R$ 200,00 |  |
-| 22/01/2025 | Frederico Aguirre von Randow | ***.801.627-** | R$ 200,00 |  |
+| 22/01/2025 | Frederico Aguirre von Randow | ***.801.627-** | R$ 50,00 | Anuidade |
+| 22/01/2025 | Frederico Aguirre von Randow | ***.801.627-** | R$ 200,00 | Anuidade |
 | 24/12/2025 | CARLOS ROMERO AGUIAR SIQUEIRA | ***.829.497-** | R$ 150,00 |  |
 | 28/04/2025 | LUIS GUSTAVO AZEVEDO | ***.053.637-** | R$ 200,00 |  |
 | 28/04/2025 | JOSUE DOS REIS | ***.210.907-** | R$ 200,00 | Anuidade 2025 |
@@ -82,13 +84,14 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | 30/12/2025 | DASANYHEV DE SOUZA CARDOSO | ***.671.417-** | R$ 150,00 |  |
 | 30/12/2025 | ROGERIO VAZ DA SILVA | ***.746.196-** | R$ 150,00 |  |
 | 31/01/2025 | DEVERSON CLEMENCIO DE O.GOMES | ***.594.117-** | R$ 230,00 |  |
+| 31/01/2025 | FM RESTAURANTE LTDA | 02.765.845 0001-01 | R$ 200,00 | Anuidade |
 | 31/12/2025 | ALEXANDRE RODRIGUES VALINHOS | ***.155.347-** | R$ 150,00 |  |
 | 31/12/2025 | FELIPE DE SOUZA BREDA | ***.114.837-** | R$ 150,00 |  |
 
 </details>
 
 <details>
-<summary><b>Inscrição Evento (XC AVLAC)</b> (29 txs): R$ 980,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Inscrição Evento (XC AVLAC)</b> (29 txs): R$ 990,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
@@ -96,6 +99,7 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | 03/02/2025 | FRANCISCO CARLOS BATISTA DA SILVA | ***.952.697-** | R$ 30,00 | XC AVILAC 2025 |
 | 03/02/2025 | FRONZIO CALHEIRA MOTA | ***.528.207-** | R$ 30,00 |  |
 | 03/02/2025 | Andre Scarton Ribeiro Do Val | ***.894.617-** | R$ 30,00 |  |
+| 03/02/2025 | LUCAS RENAN BARBOSA DE ARAUJO PORT | 29.532.698 0001-78 | R$ 60,00 |  |
 | 03/02/2025 | VALNEY JOSE DA SILVA OLIVEIRA | ***.123.157-** | R$ 30,00 |  |
 | 03/02/2025 | ANDRE ALEXANDRE BARBOSA STAVRAKAS | ***.185.447-** | R$ 30,00 |  |
 | 03/02/2025 | CARLOS MARQUES ROSA | ***.630.527-** | R$ 30,00 |  |
@@ -105,7 +109,6 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | 10/02/2025 | JULIO AUGUSTO AFRO DA SILVA | ***.778.867-** | R$ 30,00 | XC AVLAC 2025 |
 | 10/02/2025 | RODRIGO CARRILHO SOARES | ***.299.447-** | R$ 60,00 |  |
 | 10/03/2025 | Felipe de Souza Breda | ***.114.837-** | R$ 30,00 |  |
-| 22/01/2025 | Frederico Aguirre von Randow | ***.801.627-** | R$ 50,00 |  |
 | 24/02/2025 | ROGERIO VAZ DA SILVA | ***.746.196-** | R$ 30,00 |  |
 | 26/05/2025 | MILTON L M L G DE S MARTINHO | ***.365.867-** | R$ 30,00 |  |
 | 31/01/2025 | ROGER FAICAL RONCONI | ***.881.817-** | R$ 30,00 |  |
@@ -144,14 +147,11 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 </details>
 
 <details>
-<summary><b>Entrada sem classificação</b> (4 txs): R$ 560,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Entrada sem classificação</b> (1 txs): R$ 150,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
-| 02/01/2025 | Prozelo Limp | 20.757.200 0001-09 | R$ 150,00 |  |
-| 03/02/2025 | LUCAS RENAN BARBOSA DE ARAUJO PORT | 29.532.698 0001-78 | R$ 60,00 |  |
 | 08/12/2025 | LUCAS RENAN BARBOSA DE ARAUJO PORT | 29.532.698 0001-78 | R$ 150,00 |  |
-| 31/01/2025 | FM RESTAURANTE LTDA | 02.765.845 0001-01 | R$ 200,00 |  |
 
 </details>
 
@@ -234,7 +234,7 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
 | 03/07/2025 | ***.114.837-** |  | R$ 225,80 |  |
-| 29/10/2025 | ***.223.097-** |  | R$ 250,00 |  |
+| 29/10/2025 | ***.223.097-** |  | R$ 250,00 | Servicos Prestados / Limpeza |
 
 </details>
 
@@ -253,7 +253,7 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 ### 🟢 Recebimentos de 2026
 
 <details>
-<summary><b>Anuidade</b> (12 txs): R$ 2.350,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Anuidade</b> (14 txs): R$ 2.550,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
@@ -268,7 +268,9 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | 14/01/2026 | RAFAEL PEREIRA | ***.596.236-** | R$ 200,00 | Anuidade avlac |
 | 16/03/2026 | Rubens Schunck Riciere | ***.548.897-** | R$ 200,00 |  |
 | 17/04/2026 | Thiago de Moraes Lima | ***.559.467-** | R$ 200,00 |  |
+| 18/02/2026 | CASTELHANOS BEACH & BIKE | 51.485.576 0001-27 | R$ 150,00 | Anuidade |
 | 18/02/2026 | RICARDO ANTONIO RAMOS | ***.466.607-** | R$ 200,00 |  |
+| 18/02/2026 | CASTELHANOS BEACH & BIKE | 51.485.576 0001-27 | R$ 50,00 | Anuidade |
 
 </details>
 
@@ -298,16 +300,6 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | 09/02/2026 | JULIO AUGUSTO AFRO DA SILVA | ***.778.867-** | R$ 100,00 | XC AVLAC 2026 |
 | 18/02/2026 | WENCESLAU F SANTOS | ***.451.226-** | R$ 100,00 |  |
 | 18/02/2026 | ANDRE ALEXANDRE BARBOSA STAVRAKAS | ***.185.447-** | R$ 100,00 |  |
-
-</details>
-
-<details>
-<summary><b>Entrada sem classificação</b> (2 txs): R$ 200,00 <i>(Clique para expandir)</i></summary>
-
-| Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
-| :---: | :--- | :---: | :---: | :--- |
-| 18/02/2026 | CASTELHANOS BEACH & BIKE | 51.485.576 0001-27 | R$ 150,00 |  |
-| 18/02/2026 | CASTELHANOS BEACH & BIKE | 51.485.576 0001-27 | R$ 50,00 |  |
 
 </details>
 
@@ -380,7 +372,7 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
-| 20/02/2026 | ***.043.727-** |  | R$ 59,50 |  |
+| 20/02/2026 | ***.043.727-** |  | R$ 59,50 | Serviços Prestados / Limpeza |
 | 23/01/2026 | ***.223.097-** |  | R$ 250,00 |  |
 | 27/04/2026 | ***.223.097-** |  | R$ 150,00 |  |
 
@@ -400,11 +392,11 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 
 ### Receitas Totais por Categoria
 
- - **Anuidade** (72 txs): R$ 12.180,00
- - **Inscrição Evento (XC AVLAC)** (50 txs): R$ 3.080,00
+ - **Anuidade** (77 txs): R$ 12.780,00
+ - **Inscrição Evento (XC AVLAC)** (50 txs): R$ 3.090,00
  - **Rendimento de Capital** (1 txs): R$ 202,95
  - **Devolução / Estorno** (2 txs): R$ 933,58
- - **Entrada sem classificação** (6 txs): R$ 760,00
+ - **Entrada sem classificação** (1 txs): R$ 150,00
 
 ### Despesas Totais por Categoria
 

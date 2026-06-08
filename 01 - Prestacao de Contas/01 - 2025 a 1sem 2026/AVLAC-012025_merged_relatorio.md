@@ -88,7 +88,7 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 </details>
 
 <details>
-<summary><b>Inscrição Evento (XC AVLAC)</b> (29 txs): R$ 980,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Inscrição Evento (XC AVLAC)</b> (30 txs): R$ 1.040,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
@@ -96,6 +96,7 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | 03/02/2025 | FRANCISCO CARLOS BATISTA DA SILVA | ***.952.697-** | R$ 30,00 | XC AVILAC 2025 |
 | 03/02/2025 | FRONZIO CALHEIRA MOTA | ***.528.207-** | R$ 30,00 |  |
 | 03/02/2025 | Andre Scarton Ribeiro Do Val | ***.894.617-** | R$ 30,00 |  |
+| 03/02/2025 | LUCAS RENAN BARBOSA DE ARAUJO PORT | 29.532.698 0001-78 | R$ 60,00 |  |
 | 03/02/2025 | VALNEY JOSE DA SILVA OLIVEIRA | ***.123.157-** | R$ 30,00 |  |
 | 03/02/2025 | ANDRE ALEXANDRE BARBOSA STAVRAKAS | ***.185.447-** | R$ 30,00 |  |
 | 03/02/2025 | CARLOS MARQUES ROSA | ***.630.527-** | R$ 30,00 |  |
@@ -144,12 +145,11 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 </details>
 
 <details>
-<summary><b>Entrada sem classificação</b> (4 txs): R$ 560,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Entrada sem classificação</b> (3 txs): R$ 500,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
 | 02/01/2025 | Prozelo Limp | 20.757.200 0001-09 | R$ 150,00 |  |
-| 03/02/2025 | LUCAS RENAN BARBOSA DE ARAUJO PORT | 29.532.698 0001-78 | R$ 60,00 |  |
 | 08/12/2025 | LUCAS RENAN BARBOSA DE ARAUJO PORT | 29.532.698 0001-78 | R$ 150,00 |  |
 | 31/01/2025 | FM RESTAURANTE LTDA | 02.765.845 0001-01 | R$ 200,00 |  |
 
@@ -273,7 +273,7 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 </details>
 
 <details>
-<summary><b>Inscrição Evento (XC AVLAC)</b> (21 txs): R$ 2.100,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Inscrição Evento (XC AVLAC)</b> (22 txs): R$ 2.150,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
@@ -298,16 +298,16 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 | 09/02/2026 | JULIO AUGUSTO AFRO DA SILVA | ***.778.867-** | R$ 100,00 | XC AVLAC 2026 |
 | 18/02/2026 | WENCESLAU F SANTOS | ***.451.226-** | R$ 100,00 |  |
 | 18/02/2026 | ANDRE ALEXANDRE BARBOSA STAVRAKAS | ***.185.447-** | R$ 100,00 |  |
+| 18/02/2026 | CASTELHANOS BEACH & BIKE | 51.485.576 0001-27 | R$ 50,00 |  |
 
 </details>
 
 <details>
-<summary><b>Entrada sem classificação</b> (2 txs): R$ 200,00 <i>(Clique para expandir)</i></summary>
+<summary><b>Entrada sem classificação</b> (1 txs): R$ 150,00 <i>(Clique para expandir)</i></summary>
 
 | Data | Favorecido/Pagador | CPF/CNPJ | Valor | Comentário |
 | :---: | :--- | :---: | :---: | :--- |
 | 18/02/2026 | CASTELHANOS BEACH & BIKE | 51.485.576 0001-27 | R$ 150,00 |  |
-| 18/02/2026 | CASTELHANOS BEACH & BIKE | 51.485.576 0001-27 | R$ 50,00 |  |
 
 </details>
 
@@ -401,10 +401,10 @@ Gerado automaticamente a partir do extrato: `AVLAC-012025_merged.txt`
 ### Receitas Totais por Categoria
 
  - **Anuidade** (72 txs): R$ 12.180,00
- - **Inscrição Evento (XC AVLAC)** (50 txs): R$ 3.080,00
+ - **Inscrição Evento (XC AVLAC)** (52 txs): R$ 3.190,00
  - **Rendimento de Capital** (1 txs): R$ 202,95
  - **Devolução / Estorno** (2 txs): R$ 933,58
- - **Entrada sem classificação** (6 txs): R$ 760,00
+ - **Entrada sem classificação** (4 txs): R$ 650,00
 
 ### Despesas Totais por Categoria
 

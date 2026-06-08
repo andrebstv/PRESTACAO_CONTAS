@@ -241,17 +241,18 @@ def categorize_transaction(tx, name, identifier, remark):
         if 'anuidade' in remark_l or 'mensalidade' in remark_l or 'anuidade' in desc_l:
             return "Anuidade"
             
+        # Classificação por faixa de valor solicitada pelo usuário:
+        # Faixa de R$ 30 a R$ 100 -> Inscrição Evento (XC AVLAC)
+        if 30.0 <= val <= 100.0:
+            return "Inscrição Evento (XC AVLAC)"
+
         # 5. Entrada sem classificação (empresas/CNPJs)
         is_cnpj = "0001" in identifier or "0001" in name or "ltda" in name_l or "s/a" in name_l or " Rest " in name or "restaurante" in name_l
         if is_cnpj:
             return "Entrada sem classificação"
             
-        # Classificação por faixa de valor solicitada pelo usuário:
-        # Faixa de R$ 30 a R$ 100 -> Inscrição Evento (XC AVLAC)
         # Acima de R$ 100 -> Anuidade
-        if 30.0 <= val <= 100.0:
-            return "Inscrição Evento (XC AVLAC)"
-        elif val > 100.0:
+        if val > 100.0:
             return "Anuidade"
             
         # 6. Outras Receitas (caso não bata em nada anterior, ex: valores abaixo de R$ 30)
