@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full bg-slate-950 text-slate-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Financeiro - AVLAC</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        title: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-glow {
+            transition: all 0.3s ease;
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 20px 0 rgba(14, 165, 233, 0.15);
+            transform: translateY(-2px);
+        }
+        /* Personalização do scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen flex flex-col bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.12),rgba(255,255,255,0))]">
+    
+    <!-- Header -->
+    <header class="border-b border-slate-900 bg-slate-950/80 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white text-2xl shadow-lg shadow-sky-500/20">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <div>
+                    <h1 class="font-title font-bold text-2xl tracking-tight text-white">AVLAC</h1>
+                    <p class="text-xs text-slate-400">Associação de Voo Livre de Alfredo Chaves</p>
+                </div>
+            </div>
+            <div class="text-right sm:text-right">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">
+                    <i class="fa-solid fa-file-invoice"></i> Extrato: AVLAC-012025_merged.txt
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        
+        <!-- Tabs de Ano -->
+        <div class="flex items-center gap-2 mb-8 bg-slate-900/60 p-1.5 rounded-xl w-fit border border-slate-800/80">
+            <button onclick="changeYear('Todos')" id="tab-Todos" class="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-sky-400 bg-slate-950/80 border border-slate-800">
+                Todos os Anos
+            </button>
+            <button onclick="changeYear('2025')" id="tab-2025" class="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-slate-400 hover:text-slate-200">
+                2025
+            </button>
+            <button onclick="changeYear('2026')" id="tab-2026" class="px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-slate-400 hover:text-slate-200">
+                2026
+            </button>
+        </div>
+
+        <!-- Metric Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Receitas -->
+            <div class="glass card-glow rounded-2xl p-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/5 rounded-bl-full pointer-events-none"></div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-sm font-medium text-slate-400">Total Receitas</span>
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                </div>
+                <div class="text-3xl font-title font-bold text-emerald-400" id="total-receitas">R$ 0,00</div>
+                <div class="text-xs text-slate-500 mt-2" id="receitas-count">0 transações</div>
+            </div>
+
+            <!-- Despesas -->
+            <div class="glass card-glow rounded-2xl p-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-rose-500/5 rounded-bl-full pointer-events-none"></div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-sm font-medium text-slate-400">Total Despesas</span>
+                    <div class="w-8 h-8 rounded-lg bg-rose-500/10 flex items-center justify-center text-rose-400">
+                        <i class="fa-solid fa-arrow-trend-down"></i>
+                    </div>
+                </div>
+                <div class="text-3xl font-title font-bold text-rose-400" id="total-despesas">R$ 0,00</div>
+                <div class="text-xs text-slate-500 mt-2" id="despesas-count">0 transações</div>
+            </div>
+
+            <!-- Saldo Líquido -->
+            <div class="glass card-glow rounded-2xl p-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-sky-500/5 rounded-bl-full pointer-events-none"></div>
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-medium text-slate-400">Saldo Líquido</span>
+                    <div class="w-8 h-8 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-400" id="saldo-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                </div>
+                <div class="text-3xl font-title font-bold text-white mb-2" id="total-saldo">R$ 0,00</div>
+                
+                <!-- Informações de Saldo Inicial e Final adicionadas aqui -->
+                <div class="text-[11px] text-slate-400 flex flex-col gap-1 border-t border-slate-900 pt-2" id="saldo-details">
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Saldo Inicial:</span> 
+                        <span id="saldo-inicial" class="font-mono text-slate-300 font-medium">R$ 0,00</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-500">Saldo Final:</span> 
+                        <span id="saldo-final" class="font-mono text-slate-300 font-medium">R$ 0,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Two Columns Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Column 1: Categoria Breakdown -->
+            <div class="lg:col-span-1 flex flex-col gap-6">
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="font-title font-semibold text-lg text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie text-sky-500"></i> Receitas por Categoria
+                    </h3>
+                    <div class="flex flex-col gap-4" id="receitas-breakdown">
+                        <!-- Progress bars -->
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl p-6">
+                    <h3 class="font-title font-semibold text-lg text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-bar text-rose-500"></i> Despesas por Categoria
+                    </h3>
+                    <div class="flex flex-col gap-4" id="despesas-breakdown">
+                        <!-- Progress bars -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 & 3: Interactive Table -->
+            <div class="lg:col-span-2 flex flex-col gap-6">
+                <div class="glass rounded-2xl p-6">
+                    
+                    <!-- Filtros e Pesquisa -->
+                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                        <div class="flex-grow relative">
+                            <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-slate-500"></i>
+                            <input type="text" id="search-input" placeholder="Pesquisar por pagador, comentário ou documento..." 
+                                   class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900/60 border border-slate-800 focus:outline-none focus:border-sky-500 text-sm text-slate-200 placeholder-slate-500">
+                        </div>
+                        <div class="flex gap-4">
+                            <select id="type-filter" class="px-4 py-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-sm text-slate-300 focus:outline-none focus:border-sky-500">
+                                <option value="Todos">Todos Fluxos</option>
+                                <option value="Crédito">Entradas (Créditos)</option>
+                                <option value="Débito">Saídas (Débitos)</option>
+                            </select>
+                            <select id="category-filter" class="px-4 py-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-sm text-slate-300 focus:outline-none focus:border-sky-500 max-w-[150px] sm:max-w-xs">
+                                <option value="Todos">Todas Categorias</option>
+                                <!-- Categories populated by JS -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Tabela de Transações -->
+                    <div class="overflow-x-auto rounded-xl border border-slate-900">
+                        <table class="min-w-full divide-y divide-slate-900 text-sm text-left">
+                            <thead class="bg-slate-900/40 text-slate-400 font-medium text-xs uppercase tracking-wider">
+                                <tr>
+                                    <th class="px-4 py-3.5">Data</th>
+                                    <th class="px-4 py-3.5">Beneficiário/Origem</th>
+                                    <th class="px-4 py-3.5">Categoria</th>
+                                    <th class="px-4 py-3.5 text-right">Valor</th>
+                                    <th class="px-2 py-3.5 text-center">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-900 bg-slate-950/20" id="transactions-body">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="flex justify-between items-center text-xs text-slate-500 mt-4">
+                        <span id="showing-count">Mostrando 0 de 0 transações</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-6 mt-16 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500 flex flex-col sm:flex-row sm:justify-between items-center gap-4">
+            <div>
+                © 2026 AVLAC - Associação de Voo Livre de Alfredo Chaves. Todos os direitos reservados.
+            </div>
+            <div class="flex items-center gap-4">
+                Desenvolvido para Prestação de Contas
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Logic -->
+    <script>
+        const transactions = [{"Data": "02/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Prozelo Limp", "CPF_CNPJ": "20.757.200 0001-09", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Entrada sem classificação", "year": "2025"}, {"Data": "02/01/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 25.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "20/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Frederico Aguirre von Randow", "CPF_CNPJ": "***.801.627-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "21/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "DASANYHEV SOUZA CARDOSO", "CPF_CNPJ": "***.671.417-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "22/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Frederico Aguirre von Randow", "CPF_CNPJ": "***.801.627-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 50.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "22/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Frederico Aguirre von Randow", "CPF_CNPJ": "***.801.627-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ROGER FAICAL RONCONI", "CPF_CNPJ": "***.881.817-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "THADEU RONCHI", "CPF_CNPJ": "***.363.077-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "17706442", "Descrição Sicoob": "TRANSF.RECEBIDA - PIX SICOOB", "Payer_Favorecido": "JACKSON BERTOLI BISSE", "CPF_CNPJ": "***.517.237-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JAUDE R LOURES ROCHA", "CPF_CNPJ": "***.651.699-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOSE CARLOS BAPTISTA", "CPF_CNPJ": "***.467.817-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ALMIR GOMES POLTRONIERI", "CPF_CNPJ": "***.500.337-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "OSCAR A FIGUEIREDO JR", "CPF_CNPJ": "***.582.307-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ARLINDO MERA PRATES", "CPF_CNPJ": "***.389.520-**", "Comentário Pix": "XC AVLAC", "Tipo": "Crédito", "Valor (R$)": 60.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOAO BATISTA MONT GOMERY CARVALHO LAZARO", "CPF_CNPJ": "***.072.927-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Osmar Freitas Barroso", "CPF_CNPJ": "***.828.277-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Adilson Neves De Souza", "CPF_CNPJ": "***.180.907-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Jovani Borghi", "CPF_CNPJ": "***.359.377-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "DEVERSON CLEMENCIO DE O.GOMES", "CPF_CNPJ": "***.594.117-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 230.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "WENCESLAU FERREIRA DOS SANTOS", "CPF_CNPJ": "***.451.226-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "31/01/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FM RESTAURANTE LTDA", "CPF_CNPJ": "02.765.845 0001-01", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Entrada sem classificação", "year": "2025"}, {"Data": "03/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Joao Olivio Rodrigues Franzosi", "CPF_CNPJ": "***.082.597-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "03/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FRANCISCO CARLOS BATISTA DA SILVA", "CPF_CNPJ": "***.952.697-**", "Comentário Pix": "XC AVILAC 2025", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "03/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Andre Scarton Ribeiro Do Val", "CPF_CNPJ": "***.894.617-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "03/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FRONZIO CALHEIRA MOTA", "CPF_CNPJ": "***.528.207-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "03/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Andre Scarton Ribeiro Do Val", "CPF_CNPJ": "***.894.617-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "03/02/2025", "Documento": "17732161", "Descrição Sicoob": "TRANSF.RECEBIDA - PIX SICOOB", "Payer_Favorecido": "LUCAS RENAN BARBOSA DE ARAUJO PORT", "CPF_CNPJ": "29.532.698 0001-78", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 60.0, "Categoria": "Entrada sem classificação", "year": "2025"}, {"Data": "03/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "VALNEY JOSE DA SILVA OLIVEIRA", "CPF_CNPJ": "***.123.157-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "03/02/2025", "Documento": "3010", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "ANDRE ALEXANDRE BARBOSA STAVRAKAS", "CPF_CNPJ": "***.185.447-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "03/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "CARLOS MARQUES ROSA", "CPF_CNPJ": "***.630.527-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "03/02/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 25.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "06/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ALFREDO CARDOSO SANTOS", "CPF_CNPJ": "***.395.637-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "07/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "LUIS CARLOS FURBINO DE PI", "CPF_CNPJ": "***.354.756-**", "Comentário Pix": "XCAvlac", "Tipo": "Crédito", "Valor (R$)": 60.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "10/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JULIO AUGUSTO AFRO DA SILVA", "CPF_CNPJ": "***.778.867-**", "Comentário Pix": "XC AVLAC 2025", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "10/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "RODRIGO CARRILHO SOARES", "CPF_CNPJ": "***.299.447-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 60.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "10/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "RICARDO ANTONIO RAMOS", "CPF_CNPJ": "***.466.607-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "17/02/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FELIPE DE SOUZA BREDA", "CPF_CNPJ": "***.114.837-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "24/02/2025", "Documento": "3007", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "ROGERIO VAZ DA SILVA", "CPF_CNPJ": "***.746.196-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "05/03/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 25.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "10/03/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Felipe de Souza Breda", "CPF_CNPJ": "***.114.837-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "10/03/2025", "Documento": "3007", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "LUIS RICARDO BUTCOVESKY NAPOLEAO", "CPF_CNPJ": "***.946.597-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "13/03/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FELIPE SILVA GOBBO", "CPF_CNPJ": "***.675.437-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "01/04/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 25.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "08/04/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Rubens Schunck Riciere", "CPF_CNPJ": "***.548.897-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "09/04/2025", "Documento": "3010", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "PAULO CESAR ARAUJO SANTOS", "CPF_CNPJ": "***.942.545-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "28/04/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "LUIS GUSTAVO AZEVEDO", "CPF_CNPJ": "***.053.637-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "28/04/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOSUE DOS REIS", "CPF_CNPJ": "***.210.907-**", "Comentário Pix": "Anuidade 2025", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "02/05/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 25.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "26/05/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MILTON L M L G DE S MARTINHO", "CPF_CNPJ": "***.365.867-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 30.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2025"}, {"Data": "02/06/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 25.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "01/07/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 25.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "02/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "48.024.083 0001-85", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 615.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "03/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "48.024.083 0001-85", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 615.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "03/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.801.627-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 465.0, "Categoria": "Reembolso despesas/Eventos", "year": "2025"}, {"Data": "03/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.114.837-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 225.8, "Categoria": "Despesa a Categorizar / Outras", "year": "2025"}, {"Data": "03/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "40.612.231 0001-70", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 606.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "04/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "DEOVAIR MONTEIRO CESAR", "CPF_CNPJ": "***.048.446-**", "Comentário Pix": "Avlac", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "40.612.231 0001-70", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 615.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "14/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.801.627-**", "CPF_CNPJ": "", "Comentário Pix": "repasse festa AVLAC", "Tipo": "Débito", "Valor (R$)": 1488.57, "Categoria": "Reembolso despesas/Eventos", "year": "2025"}, {"Data": "16/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "15.436.940 0001-03", "CPF_CNPJ": "", "Comentário Pix": "estacao metereologica", "Tipo": "Débito", "Valor (R$)": 1206.11, "Categoria": "Manutenção da Estação / Rampa", "year": "2025"}, {"Data": "22/07/2025", "Documento": "Pix", "Descrição Sicoob": "CRÉDITO DEVOLUÇÃO PIX", "Payer_Favorecido": "Amazon Servicos de Varejo do Brasil LTDA", "CPF_CNPJ": "15.436.940 0001-03", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 0.58, "Categoria": "Devolução / Estorno", "year": "2025"}, {"Data": "23/07/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.705.027-**", "CPF_CNPJ": "", "Comentário Pix": "Cerveja Bar do Bruxo", "Tipo": "Débito", "Valor (R$)": 810.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "01/08/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "01/09/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "01/10/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "29/10/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.223.097-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 250.0, "Categoria": "Despesa a Categorizar / Outras", "year": "2025"}, {"Data": "03/11/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "26/11/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "40.612.231 0001-70", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 1698.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "26/11/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "36.320.364 0001-04", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 54.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "26/11/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.801.627-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 219.6, "Categoria": "Reembolso despesas/Eventos", "year": "2025"}, {"Data": "28/11/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.801.627-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 1803.74, "Categoria": "Reembolso despesas/Eventos", "year": "2025"}, {"Data": "01/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.009.767-**", "CPF_CNPJ": "", "Comentário Pix": "churrasqueiro", "Tipo": "Débito", "Valor (R$)": 350.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "01/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.600.567-**", "CPF_CNPJ": "", "Comentário Pix": "Feijao Tropeiro", "Tipo": "Débito", "Valor (R$)": 300.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "01/12/2025", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2025"}, {"Data": "04/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.705.027-**", "CPF_CNPJ": "", "Comentário Pix": "Cerveja e Carvao", "Tipo": "Débito", "Valor (R$)": 933.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "04/12/2025", "Documento": "Pix", "Descrição Sicoob": "ESTORNO PIX EMITIDO", "Payer_Favorecido": "***.705.027-**", "CPF_CNPJ": "", "Comentário Pix": "Cerveja e Carvao", "Tipo": "Crédito", "Valor (R$)": 933.0, "Categoria": "Devolução / Estorno", "year": "2025"}, {"Data": "05/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.705.027-**", "CPF_CNPJ": "", "Comentário Pix": "cerveja e carvao", "Tipo": "Débito", "Valor (R$)": 933.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Atila Pinheiro Afonso Campagnaro", "CPF_CNPJ": "***.777.577-**", "Comentário Pix": "ATILACAMPAGNA", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "WENCESLAU FERREIRA DOS SANTOS", "CPF_CNPJ": "***.451.226-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "CARLOS MARQUES ROSA", "CPF_CNPJ": "***.630.527-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ROGER FAICAL RONCONI", "CPF_CNPJ": "***.881.817-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "THADEU RONCHI", "CPF_CNPJ": "***.363.077-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FRONZIO CALHEIRA MOTA", "CPF_CNPJ": "***.528.207-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Andre Scarton Ribeiro Do Val", "CPF_CNPJ": "***.894.617-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "VALNEY JOSE DA SILVA OLIVEIRA", "CPF_CNPJ": "***.123.157-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ARLINDO MERA PRATES", "CPF_CNPJ": "***.389.520-**", "Comentário Pix": "Anuidade", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "21578486", "Descrição Sicoob": "TRANSF.RECEBIDA - PIX SICOOB", "Payer_Favorecido": "JACKSON BERTOLI BISSE", "CPF_CNPJ": "***.517.237-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Rubens Schunck Riciere", "CPF_CNPJ": "***.548.897-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FLORISVALDO KRAUZE", "CPF_CNPJ": "***.127.437-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ROGERIO OLIVEIRA DE AGUIAR", "CPF_CNPJ": "***.874.207-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOAO BATISTA MONT GOMERY CARVALHO LAZARO", "CPF_CNPJ": "***.072.927-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MICHELI SOSSAI SPADETO", "CPF_CNPJ": "***.012.257-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "21578805", "Descrição Sicoob": "TRANSF.RECEBIDA - PIX SICOOB", "Payer_Favorecido": "LUCAS RENAN BARBOSA DE ARAUJO PORT", "CPF_CNPJ": "29.532.698 0001-78", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Entrada sem classificação", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JAUDE R LOURES ROCHA", "CPF_CNPJ": "***.651.699-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "08/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Joao Olivio Rodrigues Franzosi", "CPF_CNPJ": "***.082.597-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "3010", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "PAULO CESAR ARAUJO SANTOS", "CPF_CNPJ": "***.942.545-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MARCELO FERREIRA RATIS", "CPF_CNPJ": "***.039.207-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "CLOVIS JOSE BARBOSA FIGUEIRA", "CPF_CNPJ": "***.650.117-**", "Comentário Pix": "AVLAC", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOSIEL BARCELOS SANCHES", "CPF_CNPJ": "***.457.587-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MAURICIO JOSE S WANDERLEY", "CPF_CNPJ": "***.333.987-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JULIO AUGUSTO AFRO DA SILVA", "CPF_CNPJ": "***.778.867-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Pedro Henrique Torrezani Curbani", "CPF_CNPJ": "***.296.427-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "3008", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "ROSENI APARECIDA EFFGEN INOCENTE", "CPF_CNPJ": "***.554.257-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MILTON L M L G DE S MARTINHO", "CPF_CNPJ": "***.365.867-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MARCOS LEAO BICALHO", "CPF_CNPJ": "***.950.397-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Luis Hamilton Brasil da Costa", "CPF_CNPJ": "***.980.997-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MARINA OLEKSINA", "CPF_CNPJ": "***.584.811-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "09/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FRANCISCO CARLOS BATISTA DA SILVA", "CPF_CNPJ": "***.952.697-**", "Comentário Pix": "Anuidade AVLAC 2026", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "12/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "CLAUDIO NEY P LOUREIRO", "CPF_CNPJ": "***.456.917-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "12/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Adilson Neves De Souza", "CPF_CNPJ": "***.180.907-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "15/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JORGE ELIAS FARIA DE AZEVEDO", "CPF_CNPJ": "***.302.487-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "15/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "RODRIGO CARRILHO SOARES", "CPF_CNPJ": "***.299.447-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "15/12/2025", "Documento": "21681302", "Descrição Sicoob": "TRANSF.REALIZADA PIX SICOOB", "Payer_Favorecido": "SCHERRERNET TELECOMUNICACOES   LTDA", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 200.0, "Categoria": "Internet Estação", "year": "2025"}, {"Data": "15/12/2025", "Documento": "21681303", "Descrição Sicoob": "TRANSF.REALIZADA PIX SICOOB", "Payer_Favorecido": "SCHERRERNET TELECOMUNICACOES   LTDA", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 50.65, "Categoria": "Internet Estação", "year": "2025"}, {"Data": "18/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ALFREDO CARDOSO SANTOS", "CPF_CNPJ": "***.395.637-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "18/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "HUGO CAIADO DA ROCHA", "CPF_CNPJ": "***.389.531-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "24/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "CARLOS ROMERO AGUIAR SIQUEIRA", "CPF_CNPJ": "***.829.497-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "29/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Almir Gomes Poltronieri", "CPF_CNPJ": "***.500.337-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "29/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "RODOLPHO ROBSON CAVALINI", "CPF_CNPJ": "***.155.587-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "29/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOSE CARLOS BAPTISTA", "CPF_CNPJ": "***.467.817-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "29/12/2025", "Documento": "3010", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "ANDRE ALEXANDRE BARBOSA STAVRAKAS", "CPF_CNPJ": "***.185.447-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "29/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Vinicius Mansur Dose Lage de Almeida", "CPF_CNPJ": "***.930.767-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "30/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Jovani Borghi", "CPF_CNPJ": "***.359.377-**", "Comentário Pix": "JOVANIBORGHI", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "30/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "DASANYHEV DE SOUZA CARDOSO", "CPF_CNPJ": "***.671.417-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "30/12/2025", "Documento": "3007", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "ROGERIO VAZ DA SILVA", "CPF_CNPJ": "***.746.196-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "31/12/2025", "Documento": "3260", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "ALEXANDRE RODRIGUES VALINHOS", "CPF_CNPJ": "***.155.347-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "31/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FELIPE DE SOUZA BREDA", "CPF_CNPJ": "***.114.837-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2025"}, {"Data": "31/12/2025", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.801.627-**", "CPF_CNPJ": "", "Comentário Pix": "pagamento de mastro estacao Gustavo serv ico Cimento Brita e Areia", "Tipo": "Débito", "Valor (R$)": 300.0, "Categoria": "Reembolso despesas/Eventos", "year": "2025"}, {"Data": "31/12/2025", "Documento": "618", "Descrição Sicoob": "CRÉD.JUROS S/CAPITAL", "Payer_Favorecido": "CRÉD.JUROS S/CAPITAL", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 202.95, "Categoria": "Rendimento de Capital", "year": "2025"}, {"Data": "02/01/2026", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2026"}, {"Data": "05/01/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FELIPE SILVA GOBBO", "CPF_CNPJ": "***.675.437-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "05/01/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ARNALDO FERRUJINI COSTA", "CPF_CNPJ": "***.228.147-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "07/01/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JUAN CARLOS GEARA DE BARROS", "CPF_CNPJ": "***.996.087-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "07/01/2026", "Documento": "Pix", "Descrição Sicoob": "DÉBITO DEVOLUÇÃO PIX", "Payer_Favorecido": "***.996.087-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 200.0, "Categoria": "Devolução Pix Enviada", "year": "2026"}, {"Data": "08/01/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "OSCAR AUGUSTO FIGUEIREDO JR", "CPF_CNPJ": "***.582.307-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "08/01/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "LUIS CARLOS FURBINO DE PI", "CPF_CNPJ": "***.354.756-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "12/01/2026", "Documento": "22020958", "Descrição Sicoob": "TRANSF.REALIZADA PIX SICOOB", "Payer_Favorecido": "LUCINETE SIQUEIRA DOS SANTOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 150.0, "Categoria": "Serviços Prestados / Limpeza", "year": "2026"}, {"Data": "14/01/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "RAFAEL PEREIRA", "CPF_CNPJ": "***.596.236-**", "Comentário Pix": "Anuidade avlac", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "15/01/2026", "Documento": "22094705", "Descrição Sicoob": "TRANSF.REALIZADA PIX SICOOB", "Payer_Favorecido": "SCHERRERNET TELECOMUNICACOES LTDA", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 89.9, "Categoria": "Internet Estação", "year": "2026"}, {"Data": "22/01/2026", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.935.897-**", "CPF_CNPJ": "", "Comentário Pix": "carafly cache da banda", "Tipo": "Débito", "Valor (R$)": 800.0, "Categoria": "Despesa Evento (Confraternização / Troféus / Camisas)", "year": "2026"}, {"Data": "23/01/2026", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.223.097-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 250.0, "Categoria": "Despesa a Categorizar / Outras", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MILTON L M L G DE S MARTINHO", "CPF_CNPJ": "***.365.867-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JORGE ELIAS FARIA DE AZEVEDO", "CPF_CNPJ": "***.302.487-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Andre Scarton Ribeiro Do Val", "CPF_CNPJ": "***.894.617-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Lucas Renan Barbosa de Araujo Porto", "CPF_CNPJ": "***.680.357-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOAO BATISTA MONT GOMERY CARVALHO LAZARO", "CPF_CNPJ": "***.072.927-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "THADEU RONCHI", "CPF_CNPJ": "***.363.077-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ROGER FAICAL RONCONI", "CPF_CNPJ": "***.881.817-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "22289448", "Descrição Sicoob": "TRANSF.RECEBIDA - PIX SICOOB", "Payer_Favorecido": "JACKSON BERTOLI BISSE", "CPF_CNPJ": "***.517.237-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FELIPE DE SOUZA BREDA", "CPF_CNPJ": "***.114.837-**", "Comentário Pix": "inscricao XC AVLAC", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "CARLOS MARQUES ROSA", "CPF_CNPJ": "***.630.527-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "02/02/2026", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2026"}, {"Data": "03/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "VALNEY JOSE DA SILVA OLIVEIRA", "CPF_CNPJ": "***.123.157-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "03/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOAO OLIVIO RODRIGUES FRANZOSI", "CPF_CNPJ": "***.082.597-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "03/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FRONZIO CALHEIRA MOTA", "CPF_CNPJ": "***.528.207-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "05/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "ALFREDO CARDOSO SANTOS", "CPF_CNPJ": "***.395.637-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "05/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "FRANCISCO CARLOS BATISTA DA SILVA", "CPF_CNPJ": "***.952.697-**", "Comentário Pix": "Inscricao XC AVILAC 2026", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "09/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOSIEL BARCELOS SANCHES", "CPF_CNPJ": "***.457.587-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "09/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JOSE CARLOS BAPTISTA", "CPF_CNPJ": "***.467.817-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "09/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "MICHELI SOSSAI SPADETO", "CPF_CNPJ": "***.012.257-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "09/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JULIO AUGUSTO AFRO DA SILVA", "CPF_CNPJ": "***.778.867-**", "Comentário Pix": "XC AVLAC 2026", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "11/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "LUCIA REGINA RIBEIRO BARROSO", "CPF_CNPJ": "***.726.167-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "18/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "CASTELHANOS BEACH & BIKE", "CPF_CNPJ": "51.485.576 0001-27", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 150.0, "Categoria": "Entrada sem classificação", "year": "2026"}, {"Data": "18/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "WENCESLAU F SANTOS", "CPF_CNPJ": "***.451.226-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "18/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "RICARDO ANTONIO RAMOS", "CPF_CNPJ": "***.466.607-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "18/02/2026", "Documento": "3010", "Descrição Sicoob": "CRED.TRANSF.CONTAS INTERCREDIS", "Payer_Favorecido": "ANDRE ALEXANDRE BARBOSA STAVRAKAS", "CPF_CNPJ": "***.185.447-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "18/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "CASTELHANOS BEACH & BIKE", "CPF_CNPJ": "51.485.576 0001-27", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 50.0, "Categoria": "Entrada sem classificação", "year": "2026"}, {"Data": "20/02/2026", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.043.727-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 59.5, "Categoria": "Despesa a Categorizar / Outras", "year": "2026"}, {"Data": "20/02/2026", "Documento": "22551868", "Descrição Sicoob": "DÉB.TÍTULO COBRANÇA", "Payer_Favorecido": "DÉB.TÍTULO COBRANÇA", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 90.93, "Categoria": "Tarifas Bancárias", "year": "2026"}, {"Data": "02/03/2026", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2026"}, {"Data": "06/03/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "JEAN CARLO MACIEL ALMEIDA", "CPF_CNPJ": "***.354.897-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "16/03/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Rubens Schunck Riciere", "CPF_CNPJ": "***.548.897-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "16/03/2026", "Documento": "Pix", "Descrição Sicoob": "DÉBITO DEVOLUÇÃO PIX", "Payer_Favorecido": "***.548.897-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 200.0, "Categoria": "Devolução Pix Enviada", "year": "2026"}, {"Data": "16/03/2026", "Documento": "22861241", "Descrição Sicoob": "TRANSF.REALIZADA PIX SICOOB", "Payer_Favorecido": "SCHERRERNET TELECOMUNICACOES LTDA", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 89.9, "Categoria": "Internet Estação", "year": "2026"}, {"Data": "01/04/2026", "Documento": "129", "Descrição Sicoob": "DÉBITO PACOTE SERVIÇOS", "Payer_Favorecido": "DÉBITO PACOTE SERVIÇOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 30.85, "Categoria": "Tarifas Bancárias", "year": "2026"}, {"Data": "06/04/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Rubens Schunck Riciere", "CPF_CNPJ": "***.548.897-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 100.0, "Categoria": "Inscrição Evento (XC AVLAC)", "year": "2026"}, {"Data": "09/04/2026", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "85.255.743 0001-65", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 60.0, "Categoria": "Manutenção da Estação / Rampa", "year": "2026"}, {"Data": "09/04/2026", "Documento": "23164126", "Descrição Sicoob": "TRANSF.REALIZADA PIX SICOOB", "Payer_Favorecido": "SCHERRERNET TELECOMUNICACOES LTDA", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 89.9, "Categoria": "Internet Estação", "year": "2026"}, {"Data": "17/04/2026", "Documento": "Pix", "Descrição Sicoob": "PIX RECEBIDO - OUTRA IF", "Payer_Favorecido": "Thiago de Moraes Lima", "CPF_CNPJ": "***.559.467-**", "Comentário Pix": "", "Tipo": "Crédito", "Valor (R$)": 200.0, "Categoria": "Anuidade", "year": "2026"}, {"Data": "27/04/2026", "Documento": "23377604", "Descrição Sicoob": "TRANSF.REALIZADA PIX SICOOB", "Payer_Favorecido": "LUCINETE SIQUEIRA DOS SANTOS", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 300.0, "Categoria": "Serviços Prestados / Limpeza", "year": "2026"}, {"Data": "27/04/2026", "Documento": "Pix", "Descrição Sicoob": "PIX EMITIDO OUTRA IF", "Payer_Favorecido": "***.223.097-**", "CPF_CNPJ": "", "Comentário Pix": "", "Tipo": "Débito", "Valor (R$)": 150.0, "Categoria": "Despesa a Categorizar / Outras", "year": "2026"}];
+        const balances = {"2025": {"inicial": 9284.75, "receitas": 12506.53, "despesas": 14073.67, "liquido": -1567.1399999999994, "final": 7717.610000000001}, "2026": {"inicial": 7717.610000000001, "receitas": 4650.0, "despesas": 2653.53, "liquido": 1996.4699999999998, "final": 9714.08}, "Todos": {"inicial": 9284.75, "receitas": 17156.53, "despesas": 16727.2, "liquido": 429.3299999999981, "final": 9714.079999999998}};
+        
+        let currentYear = 'Todos';
+        
+        // Formata Moeda
+        function formatMoney(value) {
+            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
+        }
+
+        // Inicializador
+        document.addEventListener('DOMContentLoaded', () => {
+            populateCategoryFilter();
+            renderDashboard();
+            
+            document.getElementById('search-input').addEventListener('input', renderDashboard);
+            document.getElementById('type-filter').addEventListener('change', renderDashboard);
+            document.getElementById('category-filter').addEventListener('change', renderDashboard);
+        });
+
+        function populateCategoryFilter() {
+            const categories = [...new Set(transactions.map(t => t.Categoria))].sort();
+            const filter = document.getElementById('category-filter');
+            categories.forEach(cat => {
+                const opt = document.createElement('option');
+                opt.value = cat;
+                opt.textContent = cat;
+                filter.appendChild(opt);
+            });
+        }
+
+        function changeYear(year) {
+            document.getElementById(`tab-${currentYear}`).className = "px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-slate-400 hover:text-slate-200";
+            currentYear = year;
+            document.getElementById(`tab-${year}`).className = "px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-sky-400 bg-slate-950/80 border border-slate-800";
+            renderDashboard();
+        }
+
+        function toggleDetails(index) {
+            const el = document.getElementById(`details-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+                icon.className = "fa-solid fa-chevron-up transition-transform";
+            } else {
+                el.classList.add('hidden');
+                icon.className = "fa-solid fa-chevron-down transition-transform";
+            }
+        }
+
+        function renderDashboard() {
+            const search = document.getElementById('search-input').value.toLowerCase();
+            const type = document.getElementById('type-filter').value;
+            const category = document.getElementById('category-filter').value;
+
+            // Filtrar
+            const filtered = transactions.filter(t => {
+                const matchesYear = currentYear === 'Todos' || t.year === currentYear;
+                
+                const matchesSearch = t.Payer_Favorecido.toLowerCase().includes(search) || 
+                                      t['Descrição Sicoob'].toLowerCase().includes(search) ||
+                                      t['Comentário Pix'].toLowerCase().includes(search) ||
+                                      t.Documento.toLowerCase().includes(search);
+                                      
+                const matchesType = type === 'Todos' || t.Tipo === type;
+                const matchesCategory = category === 'Todos' || t.Categoria === category;
+                
+                return matchesYear && matchesSearch && matchesType && matchesCategory;
+            });
+
+            // Calcular Métricas Filtradas
+            let yrInflows = 0;
+            let yrInflowsCount = 0;
+            let yrOutflows = 0;
+            let yrOutflowsCount = 0;
+
+            const categoryTotals = {};
+            const categoryTypes = {};
+
+            filtered.forEach(t => {
+                const val = t['Valor (R$)'];
+                if (t.Tipo === 'Crédito') {
+                    yrInflows += val;
+                    yrInflowsCount++;
+                } else {
+                    yrOutflows += val;
+                    yrOutflowsCount++;
+                }
+
+                categoryTotals[t.Categoria] = (categoryTotals[t.Categoria] || 0) + val;
+                categoryTypes[t.Categoria] = t.Tipo;
+            });
+
+            // Obter dados oficiais de saldo para o ano corrente (de acordo com o livro-caixa completo)
+            const balInfo = balances[currentYear];
+
+            // Renderizar Números baseados nos filtros ativos
+            // Se houver pesquisa ativa, mostramos a soma dos elementos pesquisados,
+            // senão mostramos os totais anuais reais.
+            const hasActiveSearchFilter = search !== '' || type !== 'Todos' || category !== 'Todos';
+            const displayInflows = hasActiveSearchFilter ? yrInflows : balInfo.receitas;
+            const displayOutflows = hasActiveSearchFilter ? yrOutflows : balInfo.despesas;
+            const displayBalance = hasActiveSearchFilter ? (yrInflows - yrOutflows) : balInfo.liquido;
+
+            document.getElementById('total-receitas').textContent = formatMoney(displayInflows);
+            document.getElementById('receitas-count').textContent = hasActiveSearchFilter ? `${yrInflowsCount} filtradas` : `${yrInflowsCount} transações`;
+            
+            document.getElementById('total-despesas').textContent = formatMoney(displayOutflows);
+            document.getElementById('despesas-count').textContent = hasActiveSearchFilter ? `${yrOutflowsCount} filtradas` : `${yrOutflowsCount} transações`;
+            
+            const saldoEl = document.getElementById('total-saldo');
+            const saldoIcon = document.getElementById('saldo-icon');
+            saldoEl.textContent = (displayBalance >= 0 ? '+' : '') + formatMoney(displayBalance);
+            
+            if (displayBalance >= 0) {
+                saldoEl.className = "text-3xl font-title font-bold text-emerald-400 mb-2";
+                saldoIcon.className = "w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400";
+            } else {
+                saldoEl.className = "text-3xl font-title font-bold text-rose-400 mb-2";
+                saldoIcon.className = "w-8 h-8 rounded-lg bg-rose-500/10 flex items-center justify-center text-rose-400";
+            }
+
+            // Atualizar Saldo Inicial e Final
+            document.getElementById('saldo-inicial').textContent = formatMoney(balInfo.inicial);
+            document.getElementById('saldo-final').textContent = formatMoney(balInfo.final);
+
+            // Renderizar Progress Bars de Categorias
+            const recBreakdown = document.getElementById('receitas-breakdown');
+            const despBreakdown = document.getElementById('despesas-breakdown');
+            
+            recBreakdown.innerHTML = '';
+            despBreakdown.innerHTML = '';
+
+            // Ordenar categorias por valor decrescente
+            const sortedCats = Object.keys(categoryTotals).sort((a,b) => categoryTotals[b] - categoryTotals[a]);
+            
+            let maxRec = 0;
+            let maxDesp = 0;
+            sortedCats.forEach(cat => {
+                if (categoryTypes[cat] === 'Crédito' && categoryTotals[cat] > maxRec) maxRec = categoryTotals[cat];
+                if (categoryTypes[cat] === 'Débito' && categoryTotals[cat] > maxDesp) maxDesp = categoryTotals[cat];
+            });
+
+            sortedCats.forEach(cat => {
+                const val = categoryTotals[cat];
+                const type = categoryTypes[cat];
+                
+                const barHtml = `
+                    <div>
+                        <div class="flex justify-between text-xs font-medium mb-1">
+                            <span class="text-slate-300 hover:text-white transition-colors cursor-pointer" onclick="document.getElementById('category-filter').value='${cat}'; renderDashboard();">${cat}</span>
+                            <span class="${type === 'Crédito' ? 'text-emerald-400' : 'text-rose-400'}">${formatMoney(val)}</span>
+                        </div>
+                        <div class="w-full bg-slate-950 rounded-full h-2 border border-slate-900">
+                            <div class="h-full rounded-full ${type === 'Crédito' ? 'bg-emerald-500' : 'bg-rose-500'}" style="width: ${((val / (type === 'Crédito' ? maxRec : maxDesp)) * 100) || 0}%"></div>
+                        </div>
+                    </div>
+                `;
+                
+                if (type === 'Crédito') {
+                    recBreakdown.insertAdjacentHTML('beforeend', barHtml);
+                } else {
+                    despBreakdown.insertAdjacentHTML('beforeend', barHtml);
+                }
+            });
+
+            if (recBreakdown.innerHTML === '') {
+                recBreakdown.innerHTML = '<div class="text-xs text-slate-500 italic text-center py-4">Sem entradas para este filtro</div>';
+            }
+            if (despBreakdown.innerHTML === '') {
+                despBreakdown.innerHTML = '<div class="text-xs text-slate-500 italic text-center py-4">Sem saídas para este filtro</div>';
+            }
+
+            // Renderizar Tabela
+            const tbody = document.getElementById('transactions-body');
+            tbody.innerHTML = '';
+
+            filtered.forEach((t, idx) => {
+                const rowId = `row-${idx}`;
+                const detailsId = `details-${idx}`;
+                const isCredit = t.Tipo === 'Crédito';
+                
+                const trHtml = `
+                    <tr class="hover:bg-slate-900/20 transition-colors cursor-pointer" onclick="toggleDetails(${idx})">
+                        <td class="px-4 py-3.5 text-slate-300 font-mono text-xs whitespace-nowrap">${t.Data}</td>
+                        <td class="px-4 py-3.5">
+                            <div class="font-medium text-slate-200">${t.Payer_Favorecido}</div>
+                            <div class="text-[10px] text-slate-500 font-mono">${t.CPF_CNPJ || t['Descrição Sicoob']}</div>
+                        </td>
+                        <td class="px-4 py-3.5 whitespace-nowrap">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border border-slate-800 ${isCredit ? 'bg-emerald-950/20 text-emerald-400 border-emerald-500/20' : 'bg-rose-950/20 text-rose-400 border-rose-500/20'}">
+                                ${t.Categoria}
+                            </span>
+                        </td>
+                        <td class="px-4 py-3.5 text-right font-semibold whitespace-nowrap ${isCredit ? 'text-emerald-400' : 'text-slate-300'}">
+                            ${isCredit ? '+' : '-'} ${formatMoney(t['Valor (R$)'])}
+                        </td>
+                        <td class="px-2 py-3.5 text-center">
+                            <button class="w-7 h-7 rounded-lg bg-slate-900 hover:bg-slate-800 flex items-center justify-center text-slate-400 hover:text-slate-200 transition-colors">
+                                <i id="icon-${idx}" class="fa-solid fa-chevron-down text-xs transition-transform"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr id="${detailsId}" class="hidden bg-slate-900/10">
+                        <td colspan="5" class="px-6 py-4 border-t border-slate-900/60">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                                <div>
+                                    <div class="text-slate-500 font-medium uppercase tracking-wider text-[10px] mb-1">Informações do Extrato</div>
+                                    <div class="flex flex-col gap-1 text-slate-300">
+                                        <div><span class="text-slate-500">Documento Sicoob:</span> ${t.Documento}</div>
+                                        <div><span class="text-slate-500">Descrição Original:</span> ${t['Descrição Sicoob']}</div>
+                                        <div><span class="text-slate-500">Valor Lançado:</span> R$ ${t['Valor (R$)']} (${t.Tipo === 'Crédito' ? 'Crédito/C' : 'Débito/D'})</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-slate-500 font-medium uppercase tracking-wider text-[10px] mb-1">Detalhes Adicionais (Favorecido / Mensagem)</div>
+                                    <div class="flex flex-col gap-1 text-slate-300">
+                                        <div><span class="text-slate-500">Favorecido:</span> ${t.Payer_Favorecido}</div>
+                                        <div><span class="text-slate-500">CPF/CNPJ:</span> ${t.CPF_CNPJ || 'Não informado'}</div>
+                                        <div class="mt-2 p-2 rounded bg-slate-950/60 border border-slate-900 text-sky-400">
+                                            <span class="text-slate-500 block text-[10px] uppercase font-semibold mb-0.5">Comentário Pix:</span>
+                                            ${t['Comentário Pix'] || '<span class="italic text-slate-600">Sem comentário enviado</span>'}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+                tbody.insertAdjacentHTML('beforeend', trHtml);
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="5" class="px-4 py-8 text-center text-slate-500 italic">
+                            Nenhuma transação encontrada com os filtros atuais.
+                        </td>
+                    </tr>
+                `;
+            }
+
+            document.getElementById('showing-count').textContent = `Mostrando ${filtered.length} de ${transactions.length} transações`;
+        }
+
+    </script>
+</body>
+</html>

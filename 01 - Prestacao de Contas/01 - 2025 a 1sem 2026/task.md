@@ -1,0 +1,9 @@
+- `[x]` Criar o script `processar_extrato.py` na pasta de Prestação de Contas
+- `[x]` Desenvolver o parser multilinhas robusto para os extratos do Sicoob
+- `[x]` Implementar a lógica de categorização automática baseada nas regras aprovadas
+- `[x]` Implementar a exportação das transações para CSV formatado para Excel
+- `[x]` Executar e verificar os resultados (valores consolidados, contagem de transações, etc.)
+- `[x]` Gerar e apresentar o resumo das categorias
+- `[x]` Criar o relatório final em walkthrough.md
+- `[x]` Ajustar regras de categorização por faixa de valores (R$ 30 - R$ 100 para inscrições; > R$ 100 para anuidades)
+- `[x]` Gerar relatório financeiro em arquivo Markdown local
