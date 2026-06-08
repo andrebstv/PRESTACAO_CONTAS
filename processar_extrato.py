@@ -246,14 +246,14 @@ def categorize_transaction(tx, name, identifier, remark):
         if 30.0 <= val <= 100.0:
             return "Inscrição Evento (XC AVLAC)"
 
-        # Acima de R$ 100 -> Anuidade
-        if val > 100.0:
-            return "Anuidade"
-
         # 5. Entrada sem classificação (empresas/CNPJs)
         is_cnpj = "0001" in identifier or "0001" in name or "ltda" in name_l or "s/a" in name_l or " Rest " in name or "restaurante" in name_l
         if is_cnpj:
             return "Entrada sem classificação"
+
+        # Acima de R$ 100 -> Anuidade
+        if val > 100.0:
+            return "Anuidade"
 
         # 6. Outras Receitas (caso não bata em nada anterior, ex: valores abaixo de R$ 30)
         return "Outras Receitas"
@@ -313,8 +313,8 @@ def categorize_transaction(tx, name, identifier, remark):
         if is_event_expense:
             return "Despesa Evento (Confraternização / Troféus / Camisas)"
             
-        # 7. Serviços Prestados / Limpeza (Lucinete Siqueira)
-        if 'lucinete' in name_l:
+        # 7. Serviços Prestados / Limpeza (Lucinete Siqueira ou comentário Limpeza/Serviço)
+        if 'lucinete' in name_l or 'limpeza' in remark_l or 'servico' in remark_l or 'serviço' in remark_l:
             return "Serviços Prestados / Limpeza"
             
         # 8. Despesa a Categorizar / Outras

@@ -313,8 +313,8 @@ def categorize_transaction(tx, name, identifier, remark):
         if is_event_expense:
             return "Despesa Evento (Confraternização / Troféus / Camisas)"
             
-        # 7. Serviços Prestados / Limpeza (Lucinete Siqueira)
-        if 'lucinete' in name_l:
+        # 7. Serviços Prestados / Limpeza (Lucinete Siqueira ou comentário Limpeza/Serviço)
+        if 'lucinete' in name_l or 'limpeza' in remark_l or 'servico' in remark_l or 'serviço' in remark_l:
             return "Serviços Prestados / Limpeza"
             
         # 8. Despesa a Categorizar / Outras
