@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full bg-slate-950 text-slate-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestação de Contas - AVLAC</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        title: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-glow {
+            transition: all 0.3s ease;
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 25px 0 rgba(14, 165, 233, 0.2);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen flex flex-col bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.15),rgba(255,255,255,0))]">
+
+    <!-- Content Wrapper -->
+    <div class="flex-grow flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center mb-12 max-w-md">
+            <div class="inline-flex w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-500 to-indigo-600 items-center justify-center text-white text-3xl shadow-lg shadow-sky-500/25 mb-4">
+                <i class="fa-solid fa-wind"></i>
+            </div>
+            <h1 class="font-title font-bold text-3xl text-white tracking-tight">Prestação de Contas</h1>
+            <p class="text-sky-400 text-sm font-medium mt-1">Associação de Voo Livre de Alfredo Chaves</p>
+            <p class="text-slate-400 text-xs mt-3">Demonstrativo de Receitas e Despesas (2025 - 2026)</p>
+        </div>
+
+        <!-- Portal Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl w-full">
+            
+            <!-- Card 1: Dashboard HTML -->
+            <a href="./AVLAC-012025_merged_dashboard.html" class="glass card-glow rounded-3xl p-6 flex flex-col justify-between h-64 border border-slate-800 text-left">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-sky-500/10 flex items-center justify-center text-sky-400 mb-6 text-xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h2 class="font-title font-semibold text-lg text-white mb-2">Painel Interativo</h2>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Dashboard completo com filtros de ano, busca inteligente de transações e detalhamento gráfico de fluxos.
+                    </p>
+                </div>
+                <div class="text-sky-400 text-xs font-semibold flex items-center gap-1.5 mt-4">
+                    Acessar Painel <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </div>
+            </a>
+
+            <!-- Card 2: Relatório Markdown -->
+            <a href="./AVLAC-012025_merged_relatorio.md" class="glass card-glow rounded-3xl p-6 flex flex-col justify-between h-64 border border-slate-800 text-left">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 text-xl">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <h2 class="font-title font-semibold text-lg text-white mb-2">Relatório Detalhado</h2>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Relatório textual formatado em Markdown com tabelas expansíveis de receitas e despesas colapsadas por categoria.
+                    </p>
+                </div>
+                <div class="text-indigo-400 text-xs font-semibold flex items-center gap-1.5 mt-4">
+                    Ver Relatório <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </div>
+            </a>
+
+            <!-- Card 3: Planilha CSV -->
+            <a href="./AVLAC-012025_merged_processado.csv" download class="glass card-glow rounded-3xl p-6 flex flex-col justify-between h-64 border border-slate-800 text-left">
+                <div>
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 text-xl">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <h2 class="font-title font-semibold text-lg text-white mb-2">Planilha de Lançamentos</h2>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Exportação de todas as movimentações limpas e categorizadas em CSV configurado para importação direta no Excel.
+                    </p>
+                </div>
+                <div class="text-emerald-400 text-xs font-semibold flex items-center gap-1.5 mt-4">
+                    Baixar CSV <i class="fa-solid fa-download text-[10px]"></i>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-6 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500">
+            © 2026 AVLAC - Associação de Voo Livre de Alfredo Chaves. Todos os arquivos gerados de forma local e privada.
+        </div>
+    </footer>
+
+</body>
+</html>
